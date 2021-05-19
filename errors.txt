@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/images.rpy", line 188: expected 'image_name_component' not found.
+    image call demi:
+         ^
+
+File "game/script.rpy", line 126: expected 'image_name_component' not found.
+    show call demi
+        ^
+
+Ren'Py Version: Ren'Py 7.4.0.1167
+Mon Apr 12 18:03:03 2021

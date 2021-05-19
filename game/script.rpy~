@@ -1,0 +1,41 @@
+# characters in the game
+define me = Character('Me', color="#FC33FF")
+define t = Character('Pr. Alfred Stein', color="#FF5733")
+define f = Character('Frank', color="#ffffff")
+define c = Character('Cameron', color="#347B16")
+define a = Character('Anaya', color="#7B3C16")
+define i = Character('Iman', color="#48167B")
+define p = Character('Paloma', color="#EFEC11")
+define m = Character('Marcus', color="#1133EF")
+define d = Character('Demi', color="#EF7611")
+
+#backgrounds
+
+
+label start:
+
+scene bg wallpaper
+
+play music "02 Like a Refreshing Sunrise.mp3"
+
+"You are in an online class named German 101 held on Zoom."
+
+show tobi at right with dissolve
+
+t "Do we have everyone Anya?"
+
+a "It's Anaya. A-NA-YA"
+
+t "Right. Why can’t I see someone’s video? Who is that Kelsey?"
+
+"You unmute your mic."
+
+me "Yes ... s-sorry ... my ... camera ... working ... some reason."
+
+a "Sounds like she’s having wifi issues."
+
+t "Fine, fine. In honor of \"Valentinstag\" approaching, today we will be exploring some beautiful German poetry..."
+
+".:. Good Ending."
+
+    return

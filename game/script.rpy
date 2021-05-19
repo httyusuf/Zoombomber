@@ -27,7 +27,7 @@ label start:
 scene bg zoom
 
 # player enters her name
-$ name = renpy.input("What is your name?")
+$ name = renpy.input("What is your nickname?")
 
 # your character
 define you = Character('[name]', color="#0080c0")

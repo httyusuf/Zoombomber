@@ -109,8 +109,6 @@ label start_class:
   show mute_button unmute
   "You unmute your mic."
 
-  hide mute_button unmute
-
   show outline player
   you "Yes ... s-sorry ... my ... camera ... working ... some reason."
 
@@ -124,6 +122,7 @@ label start_class:
   
   # show incoming call photo in top right corner
   show phone_call demi
+  show mute_button mute
   "You mute your mic and let out a sigh of relief. Suddenly your cell phone ''rings''."
 
   menu:
@@ -250,7 +249,9 @@ label choice4:
   "Suddenly a loud noise pulls your attention back to class."
   jump Jerome
 
+
 label Jerome:
+  hide facetime demi 
   show outline Anaya
   u "Woo! Take that motherfuckers!"
 
@@ -325,6 +326,7 @@ label choice5b:
   jump choice5d
 
 label choice5c:
+  show facetime demi
   "Demi rolls her eyes so hard you can hear it in her voice."
 
   d "Soo mature. I can't believe you fell for it too."
@@ -337,6 +339,7 @@ label choice5c:
   jump idea
 
 label choice5d:
+  show facetime demi
   "Demi rolls her eyes so hard you can hear it in her voice."
 
   d "Soo mature."
@@ -368,12 +371,12 @@ label idea:
       jump choice9
 
 label choice7:
+  #show typing I like you
   you "Okay I like your-"
 
-  #show typing I like you
+  #show I like you
   "You type out 'I like you' and accidentally click 'send'."
   
-  #show I like you
   you "FUCK! SHIT! DAMNIT!"
 
   d "Woahh there."
@@ -450,7 +453,7 @@ label choice11:
 
 label scream_into_pillow:
   hide chatbox cameron
-  "Meanwhile a ''new window'' pops up on the screen. The video is turned off"
+  "Meanwhile a ''new window'' pops up on the screen. The video is turned off."
 
   d "Who's that?"
 
@@ -458,6 +461,7 @@ label scream_into_pillow:
 
   you "Hmm?"
   
+  hide facetime demi 
   # show share_screen
   "Suddenly the Zoom window takes over your laptop, entering fullscreen. Someone is 'sharing their screen'. You go back to your desk."
 
@@ -535,7 +539,8 @@ label choice12:
   f "Im dunkelblauen Sunde..."
 
   "Frank’s voice fades into the background."
-
+  
+  show facetime demi
   d "[name] are you okay?"
 
   "You're squeezing a teddy bear to within an inch of its life."
@@ -557,6 +562,7 @@ label choice13:
   show outline Frank
   "Thankfully Frank raises his hand. His voice fades into the background as he reads aloud in German."
 
+  show facetime demi
   d "[name] are you okay?"
 
   "You're squeezing a teddy bear to within an inch of its life."
@@ -649,6 +655,7 @@ label choice18:
   jump background_changed
 
 label background_changed:
+  #show masked figure
   "Now sitting on the couch in Cameron's virtual background is a FIGURE wearing a hoodie, their face obscured."
 
   d "I guess?"
@@ -726,6 +733,7 @@ label Oh_my_God:
       jump Take_screenshot
 
 label Turn_on_mic:
+  show mute_button unmute
   "You turn on your mic."
 
   you "I-man ... Run!"
@@ -733,7 +741,8 @@ label Turn_on_mic:
   "But your audio is full of static, Iman can't hear you."
 
   you "Damnit!"
-
+  
+  show mute_button mute
   "You mute your mic."
 
   jump Send_chat_message
@@ -797,6 +806,7 @@ label Send_chat_message:
         jump option2
 
 label Take_screenshot:
+  # animate flash
   "You quickly take a screenshot of Iman's screen. The Masked Figure still looms behind her in the background."
   
   menu:
@@ -836,6 +846,7 @@ label Turn_around:
 
   "Demi’s screen glitches and suddenly the figure appears right over Demi’s shoulder. The mask fills the screen."
 
+  hide facetime demi 
   "You SCREAM, just as Demi’s video logs out and she hangs up the phone."
 
   you "Demi? Demi! Are you okay? Where are you?"
@@ -855,7 +866,8 @@ label Turn_around:
 
 label Call_her_back:
   $choice_in_textbox = True
-
+ 
+  #show facetime calling
   "You pick up your phone and try to call her back, but there's nothing but a dial tone on the other end."
 
   t "Hey why are people leaving. Class is not over!"
@@ -873,6 +885,7 @@ label Call_her_back:
 label option3:
   "You take a deep breath and try to calm down. There must be some explanation for this."
 
+  show mute_button unmute
   "You turn on your mic."
 
   you "Um did  ..zzz ... ZZzzz"
@@ -911,6 +924,7 @@ label option4:
       jump option5
 
 label option5:
+  show mute_button unmute
   you "Did anyone else see the man in the mask?"
 
   "Finally your audio comes through clearly."

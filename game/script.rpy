@@ -371,10 +371,10 @@ label idea:
       jump choice9
 
 label choice7:
-  #show typing I like you
+  show chatbox cameron typing_i_like_you at truecenter
   you "Okay I like your-"
 
-  #show I like you
+  show chatbox cameron i_like_you at truecenter
   "You type out 'I like you' and accidentally click 'send'."
   
   you "FUCK! SHIT! DAMNIT!"
@@ -425,7 +425,7 @@ label choice9:
       jump choice7
 
 label choice10:
-  # show R_background
+  show chatbox cameron R_background at truecenter
   "You quickly sends “R background” and then leap onto your bed."
 
   you "I sent him ‘I like you’ instead of ‘I like your background’ I’m gonna die."
@@ -452,7 +452,7 @@ label choice11:
   jump scream_into_pillow
 
 label scream_into_pillow:
-  hide chatbox cameron
+  hide chatbox R_background
   "Meanwhile a ''new window'' pops up on the screen. The video is turned off."
 
   d "Who's that?"

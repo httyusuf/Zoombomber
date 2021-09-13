@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/images.rpy", line 188: expected 'image_name_component' not found.
-    image call demi:
-         ^
-
-File "game/script.rpy", line 126: expected 'image_name_component' not found.
-    show call demi
-        ^
+File "game/images.rpy", line 220: expected 'simple_expression' not found.
+    yanchor
+           ^
 
 Ren'Py Version: Ren'Py 7.4.0.1167
-Mon Apr 12 18:03:03 2021
+Sat Sep 11 15:03:39 2021

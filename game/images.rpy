@@ -167,7 +167,18 @@ image chatbox everyone:
   "chatbox everyone.png"
 
 image chatbox cameron:
-  "chatbox cameron dark.png"
+  "chatbox cameron.png"
+
+image chatbox cameron typing_i_like_you:
+  "chatbox cameron typing_i_like_you.png"
+
+image chatbox cameron i_like_you:
+  "chatbox cameron i_like_you.png"
+
+image chatbox cameron R_background:
+  "chatbox cameron R_background.png"
+
+
 
 # mute icons
 image mute_button unmute:
@@ -199,3 +210,72 @@ image facetime demi:
   xanchor 0
   ypos 50
   yanchor 0
+
+#black box
+image black_box:
+  "black_box.png"
+  xpos 1060
+  xanchor 0
+  ypos 34
+  yanchor 0
+
+#small character backgrounds
+image small_playerwindow: 
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 38
+   yanchor 0
+
+image professor small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 146
+   yanchor 0
+
+image Frank small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 254
+   yanchor 0
+
+image Paloma small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 362
+   yanchor 0
+
+image Cameron small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 470
+   yanchor 0
+
+image Marcus small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 578
+   yanchor 0
+
+image Demi small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 578
+   yanchor 0
+
+image Iman small_background:
+   "small_player_window.png"
+   xpos 1064
+   xanchor 0
+   ypos 578
+   yanchor 0
+
+
+#small window outlines
+

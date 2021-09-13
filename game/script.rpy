@@ -462,7 +462,24 @@ label scream_into_pillow:
   you "Hmm?"
   
   hide facetime demi 
-  # show share_screen
+  # show share screen layout
+
+  hide playerwindowview
+  hide mute_button
+  hide text "[name]"
+  hide outline professor
+  hide Demi background
+  hide Iman background
+  hide anaya background
+  #show black_box
+  show small_playerwindow
+  show professor small_background
+  show Frank small_background
+  show Paloma small_background
+  show Cameron small_background
+  show Marcus small_background
+
+
   "Suddenly the Zoom window takes over your laptop, entering fullscreen. Someone is 'sharing their screen'. You go back to your desk."
 
   you "What's going on?"
@@ -478,19 +495,14 @@ label scream_into_pillow:
 
   "A cacophony of sound as everyone unmutes their mics."
 
-  show outline Frank
   f "What's happening?"
 
-  show outline Cameron
   c "Shut it off!"
 
-  show outline Demi
   d "Marcus stop this isn't funny."
 
-  show outline Paloma
   p "Jesus Christ!"
 
-  show outline Marcus
   m "I'm not the one doing this!"
 
   show outline professor

@@ -21,7 +21,7 @@
      id="defs2" />
   <sodipodi:namedview
      inkscape:guide-bbox="true"
-     showguides="true"
+     showguides="false"
      inkscape:lockguides="false"
      inkscape:pagecheckerboard="true"
      inkscape:snap-midpoints="true"
@@ -34,11 +34,11 @@
      borderopacity="1"
      inkscape:pageopacity="0.24705882"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2155791"
-     inkscape:cx="1008.451"
-     inkscape:cy="123.3762"
+     inkscape:zoom="1.0504853"
+     inkscape:cx="1062.593"
+     inkscape:cy="248.34962"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer10"
+     inkscape:current-layer="layer11"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -91,7 +91,7 @@
        inkscape:label=""
        id="guide878"
        orientation="0,1"
-       position="272,118.533" />
+       position="102.5427,118.11579" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:locked="false"
@@ -103,16 +103,9 @@
        inkscape:color="rgb(0,0,255)"
        inkscape:locked="false"
        inkscape:label=""
-       id="guide882"
-       orientation="0,1"
-       position="94.174031,64.558334" />
-    <sodipodi:guide
-       inkscape:color="rgb(0,0,255)"
-       inkscape:locked="false"
-       inkscape:label=""
        id="guide884"
        orientation="-1,0"
-       position="115.623,143.19599" />
+       position="102.5427,138.31542" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:locked="false"
@@ -350,7 +343,9 @@
   <g
      inkscape:label="incoming call"
      id="layer10"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     style="display:none"
+     sodipodi:insensitive="true">
     <g
        transform="translate(0.41603426)"
        inkscape:export-ydpi="96"
@@ -518,11 +513,11 @@
     </g>
   </g>
   <g
+     sodipodi:insensitive="true"
      style="display:none"
      inkscape:label="window outline"
      id="layer6"
-     inkscape:groupmode="layer"
-     sodipodi:insensitive="true">
+     inkscape:groupmode="layer">
     <rect
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
@@ -549,11 +544,11 @@
        y="19.181797" />
   </g>
   <g
-     sodipodi:insensitive="true"
      style="display:none;opacity:1"
      inkscape:label="chat box"
      id="layer5"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
     <text
        id="text911-5-2"
        y="119.4197"
@@ -565,171 +560,165 @@
          x="0"
          id="tspan909-9-4"
          sodipodi:role="line">(Privately):</tspan></text>
-    <g
+    <rect
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox everyone.png"
-       id="g1049">
-      <rect
-         style="display:inline;fill:#1a1a1a;stroke:#080000;stroke-width:0.941907;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
-         id="rect80"
-         width="111.50601"
-         height="106.47893"
-         x="120.08553"
-         y="35.930424"
-         inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron dark.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832118"
-         x="172.62683"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron dark.png"
+       y="35.930424"
+       x="120.08553"
+       height="106.47893"
+       width="111.50601"
+       id="rect80"
+       style="display:inline;fill:#1a1a1a;stroke:#080000;stroke-width:0.941907;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+    <text
+       transform="scale(1.000015,0.99998499)"
+       id="text911"
+       y="41.275314"
+       x="172.62683"
+       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832118"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0832118"
          y="41.275314"
-         id="text911"
-         transform="scale(1.000015,0.99998498)"><tspan
-           sodipodi:role="line"
-           id="tspan909"
-           x="172.62683"
-           y="41.275314"
-           style="fill:#ffffff;stroke-width:0.0832118">Chat</tspan></text>
-      <path
-         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 197.64259,40.325079 h 2.79943"
-         id="path913" />
-      <rect
-         style="fill:#1a1a1a;stroke:#ffffff;stroke-width:0.26458;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
-         id="rect915"
-         width="3.639255"
-         height="3.2192442"
-         x="211.29825"
-         y="38.396255" />
-      <path
-         style="fill:none;stroke:#fffafa;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 224.10107,38.822324 2.13789,2.13782"
-         id="path921" />
-      <path
-         id="path921-1"
-         d="m 224.10107,40.960146 2.13789,-2.137824"
-         style="fill:none;stroke:#fff7f7;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         inkscape:transform-center-x="-1.235217"
-         inkscape:transform-center-y="1.3777429" />
-      <text
-         id="text911-5"
-         y="119.10085"
+         x="172.62683"
+         id="tspan909"
+         sodipodi:role="line">Chat</tspan></text>
+    <path
+       id="path913"
+       d="m 197.64259,40.325079 h 2.79943"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       y="38.396255"
+       x="211.29825"
+       height="3.2192442"
+       width="3.639255"
+       id="rect915"
+       style="fill:#1a1a1a;stroke:#ffffff;stroke-width:0.26458;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+    <path
+       id="path921"
+       d="m 224.10107,38.822324 2.13789,2.13782"
+       style="fill:none;stroke:#fffafa;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="1.3777429"
+       inkscape:transform-center-x="-1.235217"
+       style="fill:none;stroke:#fff7f7;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 224.10107,40.960146 2.13789,-2.137824"
+       id="path921-1" />
+    <text
+       transform="scale(1.000015,0.99998499)"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
+       x="126.99812"
+       y="119.10085"
+       id="text911-5"><tspan
+         sodipodi:role="line"
+         id="tspan909-9"
          x="126.99812"
-         style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-         xml:space="preserve"
-         transform="scale(1.000015,0.99998498)"><tspan
-           style="fill:#999999;stroke-width:0.0832119"
-           y="119.10085"
-           x="126.99812"
-           id="tspan909-9"
-           sodipodi:role="line">To:</tspan></text>
-      <rect
-         style="fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.16569;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
-         id="rect956"
-         width="21.358938"
-         height="2.7073116"
-         x="135.08038"
-         y="116.9186" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-         x="135.30057"
-         y="119.43436"
-         id="text911-5-8"
-         transform="scale(1.000015,0.99998498)"><tspan
-           sodipodi:role="line"
-           id="tspan909-9-9"
-           x="135.30057"
-           y="119.43436"
-           style="fill:#ffffff;stroke-width:0.0832119">Everyone</tspan></text>
-      <path
-         d="m 153.49219,112.59789 -6.72159,-1.66053 4.79885,-4.9908 z"
-         sodipodi:type="star"
-         style="fill:#ffffff;fill-opacity:1;stroke:#3aacf4;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
-         id="path978"
-         sodipodi:sides="3"
-         sodipodi:cx="150.61075"
-         sodipodi:cy="109.82727"
-         sodipodi:r1="3.9973776"
-         sodipodi:r2="1.9986888"
-         sodipodi:arg1="0.76579283"
-         sodipodi:arg2="1.8129904"
-         inkscape:flatsided="true"
-         inkscape:rounded="0"
-         inkscape:randomized="0"
-         inkscape:transform-center-x="-0.014146578"
-         inkscape:transform-center-y="0.24183298"
-         transform="matrix(0.31391551,0.18185634,-0.33668632,0.16955701,143.85019,71.931035)" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-         x="127.56791"
-         y="128.63573"
-         id="text911-5-0"
-         transform="scale(1.000015,0.99998498)"><tspan
-           sodipodi:role="line"
-           id="tspan909-9-0"
-           x="127.56791"
-           y="128.63573"
-           style="fill:#999999;stroke-width:0.0832119">Type message here...</tspan></text>
-      <path
-         style="fill:none;stroke:#fffafa;stroke-width:0.264997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 127.13232,124.14923 v 5.09781"
-         id="path992" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-         x="209.02518"
          y="119.10085"
-         id="text911-5-9"
-         transform="scale(1.000015,0.99998498)"><tspan
-           sodipodi:role="line"
-           id="tspan909-9-8"
-           x="209.02518"
-           y="119.10085"
-           style="fill:#3aacf4;fill-opacity:1;stroke-width:0.0832119">More</tspan></text>
-      <path
-         style="fill:none;stroke:#3aacf4;stroke-width:0.396871;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 218.83151,117.29416 1.5942,1.50271 1.5942,-1.50271"
-         id="path1006" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.65359;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 120.18937,44.160874 H 231.75234"
-         id="path190" />
-      <text
-         id="text911-5-8-7"
-         y="51.367878"
+         style="fill:#999999;stroke-width:0.0832119">To:</tspan></text>
+    <rect
+       y="116.9186"
+       x="135.08038"
+       height="2.7073116"
+       width="21.358938"
+       id="rect956"
+       style="fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.16569;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+    <text
+       transform="scale(1.000015,0.99998499)"
+       id="text911-5-8"
+       y="119.43436"
+       x="135.30057"
+       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832119"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0832119"
+         y="119.43436"
+         x="135.30057"
+         id="tspan909-9-9"
+         sodipodi:role="line">Everyone</tspan></text>
+    <path
+       d="m 153.49219,112.59789 -6.72159,-1.66053 4.79885,-4.9908 z"
+       transform="matrix(0.31391551,0.18185634,-0.33668632,0.16955701,143.85019,71.931035)"
+       inkscape:transform-center-y="0.24183298"
+       inkscape:transform-center-x="-0.014146578"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.8129904"
+       sodipodi:arg1="0.76579283"
+       sodipodi:r2="1.9986888"
+       sodipodi:r1="3.9973776"
+       sodipodi:cy="109.82727"
+       sodipodi:cx="150.61075"
+       sodipodi:sides="3"
+       id="path978"
+       style="fill:#ffffff;fill-opacity:1;stroke:#3aacf4;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       sodipodi:type="star" />
+    <text
+       transform="scale(1.000015,0.99998499)"
+       id="text911-5-0"
+       y="128.63573"
+       x="127.56791"
+       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
+       xml:space="preserve"><tspan
+         style="fill:#999999;stroke-width:0.0832119"
+         y="128.63573"
+         x="127.56791"
+         id="tspan909-9-0"
+         sodipodi:role="line">Type message here...</tspan></text>
+    <path
+       id="path992"
+       d="m 127.13232,124.14923 v 5.09781"
+       style="fill:none;stroke:#fffafa;stroke-width:0.264997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       transform="scale(1.000015,0.99998499)"
+       id="text911-5-9"
+       y="119.10085"
+       x="209.02518"
+       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.0832119"
+       xml:space="preserve"><tspan
+         style="fill:#3aacf4;fill-opacity:1;stroke-width:0.0832119"
+         y="119.10085"
+         x="209.02518"
+         id="tspan909-9-8"
+         sodipodi:role="line">More</tspan></text>
+    <path
+       id="path1006"
+       d="m 218.83151,117.29416 1.5942,1.50271 1.5942,-1.50271"
+       style="fill:none;stroke:#3aacf4;stroke-width:0.396871;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path190"
+       d="M 120.18937,44.160874 H 231.75234"
+       style="fill:none;stroke:#000000;stroke-width:0.65359;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       x="126.67496"
+       y="51.367878"
+       id="text911-5-8-7"><tspan
+         sodipodi:role="line"
+         id="tspan909-9-9-7"
          x="126.67496"
-         style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;opacity:1;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.083212"
-         xml:space="preserve"><tspan
-           style="fill:#3aacf4;fill-opacity:1;stroke-width:0.083212"
-           y="51.367878"
-           x="126.67496"
-           id="tspan909-9-9-7"
-           sodipodi:role="line"><tspan
-   style="fill:#ffffff"
-   id="tspan988">From Marcus to</tspan> Everyone:</tspan></text>
-      <rect
-         y="55.684639"
-         x="128.44505"
-         height="1.9828912"
-         width="51.934429"
-         id="rect956-9"
-         style="display:inline;opacity:1;fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.89;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
-      <text
-         id="text911-5-8-3"
-         y="57.484932"
+         y="51.367878"
+         style="fill:#3aacf4;fill-opacity:1;stroke-width:0.083212"><tspan
+   id="tspan988"
+   style="fill:#ffffff">From Marcus to</tspan> Everyone:</tspan></text>
+    <rect
+       style="display:inline;fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.89;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       id="rect956-9"
+       width="51.934429"
+       height="1.9828912"
+       x="128.44505"
+       y="55.684639" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       x="128.27228"
+       y="57.484932"
+       id="text911-5-8-3"><tspan
+         sodipodi:role="line"
+         id="tspan909-9-9-9"
          x="128.27228"
-         style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
-         xml:space="preserve"><tspan
-           style="fill:#ffffff;stroke-width:0.083212"
-           y="57.484932"
-           x="128.27228"
-           id="tspan909-9-9-9"
-           sodipodi:role="line">https://youtu.be/5lbGAzo9RrM</tspan></text>
-    </g>
+         y="57.484932"
+         style="fill:#ffffff;stroke-width:0.083212">https://youtu.be/5lbGAzo9RrM</tspan></text>
   </g>
   <g
      sodipodi:insensitive="true"
@@ -742,54 +731,72 @@
        id="rect80-1"
        width="111.50601"
        height="106.47893"
-       x="126.1777"
-       y="7.683569"
-       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron dark.png"
+       x="120.08595"
+       y="35.929955"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832118"
-       x="178.7189"
-       y="13.028035"
+       x="172.62724"
+       y="41.274845"
        id="text911-8"
-       transform="scale(1.000015,0.99998499)"><tspan
+       transform="scale(1.000015,0.999985)"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan909-5"
-         x="178.7189"
-         y="13.028035"
+         x="172.62724"
+         y="41.274845"
          style="fill:#ffffff;stroke-width:0.0832118">Chat</tspan></text>
     <path
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 203.73476,12.078224 h 2.79943"
-       id="path913-8" />
+       d="m 197.64302,40.324609 h 2.79943"
+       id="path913-8"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        style="fill:#1a1a1a;stroke:#ffffff;stroke-width:0.26458;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect915-9"
        width="3.639255"
        height="3.2192442"
-       x="217.39041"
-       y="10.149401" />
+       x="211.29868"
+       y="38.395786"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#fffafa;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 230.19324,10.575469 2.13789,2.13782"
-       id="path921-9" />
+       d="m 224.1015,38.821854 2.13789,2.13782"
+       id="path921-9"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path921-1-9"
-       d="m 230.19324,12.713291 2.13789,-2.137824"
+       d="m 224.1015,40.959676 2.13789,-2.137824"
        style="fill:none;stroke:#fff7f7;stroke-width:0.26458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:transform-center-x="-1.235217"
-       inkscape:transform-center-y="1.3777429" />
+       inkscape:transform-center-y="1.3777429"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        id="text911-5-3"
-       y="90.853569"
-       x="133.09019"
+       y="119.10038"
+       x="126.99854"
        style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
        xml:space="preserve"
-       transform="scale(1.000015,0.99998499)"><tspan
+       transform="scale(1.000015,0.999985)"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          style="fill:#999999;stroke-width:0.0832119"
-         y="90.853569"
-         x="133.09019"
+         y="119.10038"
+         x="126.99854"
          id="tspan909-9-3"
          sodipodi:role="line">To:</tspan></text>
     <rect
@@ -797,21 +804,28 @@
        id="rect956-7"
        width="21.358938"
        height="2.7073116"
-       x="141.17255"
-       y="88.671745" />
+       x="135.08081"
+       y="116.91813"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-       x="141.39264"
-       y="91.187073"
+       x="135.30098"
+       y="119.43388"
        id="text911-5-8-73"
-       transform="scale(1.000015,0.99998499)"><tspan
+       transform="scale(1.000015,0.999985)"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan909-9-9-2"
-         x="141.39264"
-         y="91.187073"
+         x="135.30098"
+         y="119.43388"
          style="fill:#ffffff;stroke-width:0.0832119">Cameron</tspan></text>
     <path
+       d="m 153.49219,112.59789 -6.72159,-1.66053 4.79885,-4.9908 z"
        sodipodi:type="star"
        style="fill:#ffffff;fill-opacity:1;stroke:#3aacf4;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="path978-5"
@@ -827,55 +841,180 @@
        inkscape:randomized="0"
        inkscape:transform-center-x="-0.014146578"
        inkscape:transform-center-y="0.24183298"
-       transform="matrix(0.31391551,0.18185634,-0.33668632,0.16955701,149.94236,43.68418)"
-       d="m 153.49219,112.59789 -6.72159,-1.66053 4.79885,-4.9908 z" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-       x="133.65999"
-       y="100.38844"
-       id="text911-5-0-6"
-       transform="scale(1.000015,0.99998499)"><tspan
-         sodipodi:role="line"
-         id="tspan909-9-0-3"
-         x="133.65999"
-         y="100.38844"
-         style="fill:#999999;stroke-width:0.0832119">Type message here...</tspan></text>
+       transform="matrix(0.31391551,0.18185634,-0.33668632,0.16955701,143.85062,71.930565)"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#fffafa;stroke-width:0.264997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 133.22449,95.902375 v 5.097815"
-       id="path992-4" />
+       d="m 127.1325,124.14876 v 5.09781"
+       id="path992-4"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.32847px;line-height:1.25;font-family:sans-serif;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.0832119"
-       x="215.11725"
-       y="90.853569"
+       x="209.02559"
+       y="119.10038"
        id="text911-5-9-0"
-       transform="scale(1.000015,0.99998499)"><tspan
+       transform="scale(1.000015,0.999985)"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan909-9-8-6"
-         x="215.11725"
-         y="90.853569"
+         x="209.02559"
+         y="119.10038"
          style="fill:#3aacf4;fill-opacity:1;stroke-width:0.0832119">More</tspan></text>
     <path
        style="fill:none;stroke:#3aacf4;stroke-width:0.396871;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 224.92368,89.047305 1.5942,1.50271 1.5942,-1.50271"
-       id="path1006-0" />
+       d="m 218.83194,117.29369 1.5942,1.50271 1.5942,-1.50271"
+       id="path1006-0"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.65359;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 126.28154,15.914019 H 237.84451"
-       id="path190-4" />
+       d="M 120.1898,44.160404 H 231.75277"
+       id="path190-4"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        id="text911-5-8-73-0"
-       y="91.193962"
-       x="164.17946"
+       y="119.44035"
+       x="158.08772"
        style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
-       xml:space="preserve"><tspan
+       xml:space="preserve"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          style="fill:#ff0000;stroke-width:0.083212"
-         y="91.193962"
-         x="164.17946"
+         y="119.44035"
+         x="158.08772"
          id="tspan909-9-9-2-5"
          sodipodi:role="line">(Privately)</tspan></text>
+    <rect
+       y="55.684994"
+       x="128.44499"
+       height="1.9828912"
+       width="51.934429"
+       id="rect956-9-5"
+       style="display:inline;fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.88999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       id="text911-5-8-7-7"
+       y="51.26796"
+       x="126.67496"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         style="fill:#3aacf4;fill-opacity:1;stroke-width:0.083212"
+         y="51.26796"
+         x="126.67496"
+         id="tspan909-9-9-7-31"
+         sodipodi:role="line"><tspan
+   style="fill:#ffffff;stroke-width:0.083212"
+   id="tspan988-0">From Marcus to</tspan> Everyone:</tspan></text>
+    <text
+       id="text911-5-8-3-3"
+       y="57.723389"
+       x="128.35477"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         style="fill:#ffffff;stroke-width:0.083212"
+         y="57.723389"
+         x="128.35477"
+         id="tspan909-9-9-9-9"
+         sodipodi:role="line">https://youtu.be/5lbGAzo9RrM</tspan></text>
+    <text
+       id="text911-5-8-7-9"
+       y="67.657585"
+       x="126.67496"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       xml:space="preserve"><tspan
+         style="fill:#3aacf4;fill-opacity:1;stroke-width:0.083212"
+         y="67.657585"
+         x="126.67496"
+         id="tspan909-9-9-7-3"
+         sodipodi:role="line"><tspan
+   style="fill:#ffffff;stroke-width:0.083212"
+   id="tspan988-8">From You to</tspan> <tspan
+   style="fill:#ff0000"
+   id="tspan261">Cameron:</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       x="127.57"
+       y="128.63385"
+       id="text911-5-0-0"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan909-9-0-5"
+         x="127.57"
+         y="128.63385"
+         style="fill:#999999;stroke-width:0.083212">Type message here...</tspan></text>
+    <rect
+       style="display:inline;fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:1.91674;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       id="rect956-9-5-7"
+       width="15.323578"
+       height="2.956146"
+       x="127.95837"
+       y="70.97303" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       x="127.21354"
+       y="73.32"
+       id="text911-5-8-3-3-1"><tspan
+         sodipodi:role="line"
+         id="tspan909-9-9-9-9-3"
+         x="127.21354"
+         y="73.32"
+         style="fill:#ffffff;stroke-width:0.083212">I like you</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#3aacf4;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       x="126.67496"
+       y="83.09037"
+       id="text911-5-8-7-9-6"><tspan
+         sodipodi:role="line"
+         id="tspan909-9-9-7-3-1"
+         x="126.67496"
+         y="83.09037"
+         style="fill:#3aacf4;fill-opacity:1;stroke-width:0.083212"><tspan
+   id="tspan988-8-0"
+   style="fill:#ffffff;stroke-width:0.083212">From You to</tspan> <tspan
+   id="tspan261-2"
+   style="fill:#ff0000;stroke-width:0.083212">Cameron:</tspan></tspan></text>
+    <rect
+       y="86.326691"
+       x="128.12215"
+       height="2.6285875"
+       width="23.626444"
+       id="rect956-9-5-7-8"
+       style="display:inline;fill:#3aacf4;fill-opacity:1;stroke:#3aacf4;stroke-width:2.2443;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+    <text
+       id="text911-5-8-3-3-1-7"
+       y="88.519455"
+       x="127.75085"
+       style="font-style:normal;font-weight:normal;font-size:3.32846px;line-height:1.25;font-family:sans-serif;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.083212"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.083212"
+         y="88.519455"
+         x="127.75085"
+         id="tspan909-9-9-9-9-3-6"
+         sodipodi:role="line">R_background</tspan></text>
   </g>
   <g
      sodipodi:insensitive="true"
@@ -910,5 +1049,72 @@
        inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/images/playerwindow.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="share screen"
+     id="layer11"
+     inkscape:groupmode="layer">
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/black box.png"
+       y="9.1343565"
+       x="280.59686"
+       height="172.23129"
+       width="47.347954"
+       id="rect182"
+       style="opacity:1;fill:#000000;fill-opacity:0.995968;stroke:#0b0b0b;stroke-width:0.277047;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157" />
+    <rect
+       inkscape:export-ydpi="95.599998"
+       inkscape:export-xdpi="95.599998"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/small_player_window.png"
+       y="10.186586"
+       x="281.64908"
+       height="27.251827"
+       width="45.243492"
+       id="rect1008"
+       style="opacity:1;fill:#ff00ff;fill-opacity:0.995968;stroke:#fe00fe;stroke-width:0.264839;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.995968;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157"
+       id="rect1008-1"
+       width="45.210529"
+       height="27.218863"
+       x="281.64896"
+       y="38.761459" />
+    <rect
+       y="67.336456"
+       x="281.67319"
+       height="27.218863"
+       width="45.210533"
+       id="rect1008-1-7"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.995968;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.995968;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157"
+       id="rect1008-1-7-0"
+       width="45.210533"
+       height="27.218863"
+       x="281.67319"
+       y="95.911461" />
+    <rect
+       y="124.48646"
+       x="281.73242"
+       height="27.218863"
+       width="45.210533"
+       id="rect1008-1-7-0-3"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.995968;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.995968;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:0.992157"
+       id="rect1008-1-7-0-3-9"
+       width="45.210533"
+       height="27.218863"
+       x="281.73242"
+       y="153.06146" />
+    <rect
+       y="152.56657"
+       x="281.15405"
+       height="28.241865"
+       width="46.233532"
+       id="rect1085"
+       style="opacity:1;fill:none;fill-opacity:0.995968;stroke:#fffc00;stroke-width:1.39147;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
   </g>
 </svg>

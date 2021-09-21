@@ -471,7 +471,7 @@ label scream_into_pillow:
   hide Demi background
   hide Iman background
   hide anaya background
-  #show black_box
+  show black_box
   show small_playerwindow
   show professor small_background
   show Frank small_background
@@ -495,24 +495,57 @@ label scream_into_pillow:
 
   "A cacophony of sound as everyone unmutes their mics."
 
+  show small_outline Frank
   f "What's happening?"
 
+  show small_outline Cameron
   c "Shut it off!"
 
+  show small_outline Demi
   d "Marcus stop this isn't funny."
 
+  show small_outline Paloma
   p "Jesus Christ!"
 
+  show small_outline Marcus
   m "I'm not the one doing this!"
 
+  show small_outline professor
   show outline professor
   t "What is this Anya?"
 
+  show small_outline Cameron
   "Cameron, a vegan, turns green and runs out of his room."
 
+  show small_outline Iman
   "The only one calm is Iman, who is preoccupied by a steaming bowl of popcorn."
   
   # go back to zoon layer out
+  hide black_box
+  hide small_playerwindow
+  hide professor small_background
+  hide Frank small_background
+  hide Paloma small_background
+  hide Cameron small_background
+  hide Marcus small_background
+  hide small_outline Iman
+  show professor background
+  show anaya background
+  show Frank background
+  show Cameron background
+  show Marcus background
+  show Demi background
+  show Iman background
+  show Paloma background
+  show playerwindowview
+  show mute_button mute
+
+  show text "[name]":
+      xpos 238
+      xanchor 0.5
+      ypos 172
+      yanchor 0.5
+
   "Finally the video stops."
 
   show outline Anaya

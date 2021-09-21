@@ -276,6 +276,61 @@ image Iman small_background:
    ypos 578
    yanchor 0
 
-
 #small window outlines
+image small_outline player:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 34
+   yanchor 0
+
+image small_outline professor:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 142
+   yanchor 0
+
+image small_outline Frank:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 250
+   yanchor 0
+
+image small_outline Paloma:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 358
+   yanchor 0
+
+image small_outline Cameron:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 466
+   yanchor 0
+
+image small_outline Marcus:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 574
+   yanchor 0
+
+image small_outline Demi:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 574
+   yanchor 0
+
+image small_outline Iman:
+   "smallwindowoutline.png"
+   xpos 1060
+   xanchor 0
+   ypos 574
+   yanchor 0
+
 

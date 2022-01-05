@@ -230,7 +230,7 @@ style choice_vbox:
 
 init python:
   renpy.register_style_preference("choice", "hidden_choice", style.choice_vbox, "ypos", 500)
-  renpy.register_style_preference("choice", "hidden_choice", style.choice_vbox, "spacing", 300)
+  renpy.register_style_preference("choice", "hidden_choice", style.choice_vbox, "spacing", 290)
   renpy.register_style_preference("choice", "default", style.choice_vbox, "ypos", 370)
   renpy.register_style_preference("choice", "default", style.choice_vbox, "spacing", 22)
 

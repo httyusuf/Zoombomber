@@ -1,3 +1,4 @@
+
 # characters in the game 
 define t = Character('Pr. Alfred Stein', color="#FF5733") 
 define f = Character('Frank', color="#ffffff") 
@@ -915,16 +916,16 @@ label Call_her_back:
   #show facetime calling
   "You pick up your phone and try to call her back, but there's nothing but a dial tone on the other end."
 
-  t "Hey why are people leaving. Class is not over!"
+  t "Hey why are people leaving. Class is not over! Stay on Zoom."
   
   $renpy.set_style_preference("choice", "hidden_choice")
   menu:
-    " " 
+    t " " 
 
     "Turn on your video":
       jump Turn_on_video
 
-    "Class is not over!":
+    "Hey why are people leaving. Class is not over! Stay on Zoom.":
       jump option4
 
 label option3:

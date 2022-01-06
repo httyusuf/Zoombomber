@@ -30,7 +30,7 @@ scene bg zoom
 # player enters her name
 $ name = renpy.input("What is your name?")
 
-# your character
+# the player's character
 define you = Character('[name]', color="#0080c0")
 
 play music "02 Like a Refreshing Sunrise.mp3"
@@ -39,7 +39,7 @@ show playerwindow
 
 show text "[name]" at truecenter
 
-"I am in an online class named German 101 held on Zoom."
+"I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
 
 hide playerwindow
 hide text
@@ -62,10 +62,10 @@ show Demi background
 show Iman background
 show Paloma background
 
-"The white-haired Professor ALFRED STEIN (60s) sits in the upper middle corner. Followed by the students, all in their early 20s:"
+"The white-haired PROFESSOR STEIN sits in the upper middle. Followed by the students, all in their early 20s:"
 
 show outline Anaya
-"ANAYA (26) - the bored teacher’s assistant,"
+"ANAYA - the bored teacher’s assistant,"
 
 show outline Paloma
 "PALOMA - the hot Latin American foreign exchange student,"
@@ -80,24 +80,28 @@ show outline Demi
 "DEMI - the tomboyish athlete,"
 
 show outline Iman
-"IMAN - South Asian, the heavy snacker,"
+"IMAN - the South Asian heavy snacker,"
 
 show outline Frank
-"and FRANK - the Aryan A+ student."
+"FRANK - the brown-noser A+ student,"
 
 show mute_button mute
-"I turn off my video and and mute my mic."
+show outline player
+"and me with my video and mic turned off."
 
+hide outline player
 hide mute_button mute
 
 $renpy.set_style_preference("choice", "default")
 menu:
-    "Press start."
+    "Class begins."
 
     "Start":
       jump start_class
 
 label start_class:
+  you "Another exciting day of German, I can't wait... syke! Kill me now."
+
   show outline professor
   t "Do we have everyone Anya?"
 
@@ -108,10 +112,12 @@ label start_class:
   t "Right. Why can’t I see someone’s video? Who is that {color=#0080c0}[name]{/color}?"
 
   show mute_button unmute
-  "You unmute your mic."
+  "I unmute my mic."
 
   show outline player
   you "Yes ... s-sorry ... my ... camera ... working ... some reason."
+
+  "My audio cuts in and out."
 
   show outline Anaya
   a "Sounds like [name] is having wifi issues."
@@ -120,16 +126,16 @@ label start_class:
   t "Fine, fine. In honor of {i}Valentinstag{/i} approaching, today we will be exploring some beautiful German poetry..."
 
   "Professor Stein drones on and on."
+
+  "I mute my mic and let out a sigh of relief. Suddenly my cell phone rings."
   
   # show incoming call photo in top right corner
   show phone_call demi
   show mute_button mute
-  "You mute your mic and let out a sigh of relief. Suddenly your cell phone ''rings''."
 
   menu:
-   "Pick up the phone."
 
-   "You pick it up":
+   "Pick up the phone.":
      jump scene_2
 
 label scene_2:
@@ -137,44 +143,28 @@ label scene_2:
 
   #show facetime
   show facetime demi
-  "You pick up your phone, it's ''DEMI'' your best friend who is also in the class."
+  "I pick up the phone, it's ''DEMI'' my best friend who is also in the class."
 
   d "Hey girl!"
 
-  menu:
-    "what do you say?"
+  "She turns off her video in the class so we can talk."
 
-    "Do you think he bought it?":
-      jump choice1
-
-    "Was that convincing enough?":
-      jump choice2
-
-label choice1:
-  d "He barely knows how to use a laptop I’m sure you’re fine."
-
-  you "Ok good because I can NOT let Cameron see my room. I’ll never live this down."
-
-  d "Come on are you going to hide for the rest of the semester? It can’t be that bad."
-
-  menu:
-    "what do you say?"
-
-    "No it's even worse than you think":
-      jump choice1A
-
-    "Yeah I guess you're right..":
-      jump choice1B
+  you "Hey, I guess I was saved by these shitty headphones."
+ 
+  jump choice2
 
 label choice2:
-  d "Yeah you can {i}totally{/i} leave your camera and mic off for the rest of class."
+  d "Haha oh I thought you were faking it."
+
+  you "No, my mic actually sucks. Think that's a good enough excuse to leave my camera off too?"
+
+  d "Yeah you can totally leave your camera and mic off for the rest of class. That's my plan anyways."
 
   you "Ok good because I can NOT let Cameron see my room. I’ll never live this down."
 
   d "Come on are you going to hide for the rest of the semester? It can’t be that bad."
 
   menu:
-    "what do you say?"
 
     "No it's even worse than you think":
       jump choice1A
@@ -190,7 +180,6 @@ label choice1A:
   d "I bet Cameron won't even notice."
 
   menu:
-    "What do you do?"
 
     "Look at computer screen":
       jump look_at_computer_screen
@@ -203,16 +192,18 @@ label choice1B:
   d "I bet Cameron won't even notice."
 
   menu:
-    "What do you do?"
 
     "Look at computer screen":
       jump look_at_computer_screen
 
 label look_at_computer_screen:
+  hide facetime demi 
+
   "Cameron, along with all of the boys in class (and Demi) all stare intently at their screens."
 
   # show paoloma remove_sweatshirt
-  "Finally you notice Paloma has taken off her sweatshirt revealing a paper thin tank top, and she’s clearly not wearing a bra."
+  show outline Paloma
+  "Finally I notice Paloma taking off her sweatshirt revealing a paper thin tank top, and she’s clearly not wearing a bra."
   
   # show palomao tanktop  
   you "Ugh why do I even try?"
@@ -226,7 +217,6 @@ label look_at_computer_screen:
   d "Oh sorry yeah. Just use a funny virtual background or something."
 
   menu:
-    "What do you do?"
 
     "You mean like Marcus?":
       jump choice3
@@ -235,19 +225,21 @@ label look_at_computer_screen:
       jump choice4
 
 label choice3:
+  show outline Marcus
   "Marcus’s background is a pixelated closeup of Professor Stein’s baldspot."
 
   d "Uh maybe a little classier?"
 
-  "Suddenly a loud noise pulls your attention back to class."
+  "Suddenly a loud noise pulls my attention back to class."
   jump Jerome
 
 label choice4:
+  show outline Cameron
   "Cameron’s background is a photo of an empty casting couch."
 
   d "Uh maybe less bro-y?"
 
-  "Suddenly a loud noise pulls your attention back to class."
+  "Suddenly a loud noise pulls my attention back to class."
   jump Jerome
 
 
@@ -260,15 +252,16 @@ label Jerome:
 
   a "Shut up Jerome!"
 
-  "You all laugh."
+  "We all laugh."
 
   a "Sorry my lil bro is really into esports."
+
+  a "And this school doesn't pay me enough to move out of my parent's place. So... deal with it."
   
   show outline professor
   t "Ahem. Everyone open your textbooks to Kapitel 9: {i}Romantische Worte{/i}."
 
   menu:
-    "What do you do?"
 
     "Open your textbook":
       $open_textbook = True
@@ -278,13 +271,12 @@ label Jerome:
       jump choice6
 
 label choice5:
-  "Even though you're barely paying attention, you open your textbook."
+  "Even though I'm barely paying attention, I open my textbook."
 
   show chatbox everyone at truecenter
   "A message pops up in the Zoom chat box from 'Marcus' sent to 'Everyone'. It's a youtube link."
 
   menu:
-    "What do you do?"
 
     "Click on it":
       jump choice5a
@@ -293,12 +285,11 @@ label choice5:
       jump choice5b
 
 label choice6:
-  "You don't bother, its not like you're paying attention anyways."
+  "I don't bother, it's not like I'm paying attention anyways."
 
   "A message pops up in the Zoom chat box from 'Marcus' sent to 'Everyone'. It's a youtube link."
 
   menu:
-    "What do you do?"
 
     "Click on it":
       jump choice5a
@@ -309,30 +300,31 @@ label choice6:
 label choice5a:
   hide chatbox everyone
   # show Hitler Video
-  "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully your mic is muted."
+  "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
 
   "Unfortunately Cameron's isn't. Marcus cracks up, almost falling out of his chair."
 
-  "You can't help but laugh"
+  "I can't help but laugh."
   jump choice5c
 
 label choice5b:
   hide chatbox everyone
-  "You ignore the link but Cameron clicks on it, forgetting his mic is not muted."
+  "I ignore the link but Cameron clicks on it, forgetting his mic is not muted."
 
   "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully your mic is muted."
   
-  "You can't help but laugh"
+  "I can't help but laugh"
   # hide Htiler video
   jump choice5d
 
 label choice5c:
   show facetime demi
-  "Demi rolls her eyes so hard you can hear it in her voice."
+
+  "I laugh and Demi rolls her eyes so hard I can hear it in her voice."
 
   d "Soo mature. I can't believe you fell for it too."
 
-  "you shrug."
+  "I shrug."
 
   you "Aw but Cameron looks so cute when he's embarrassed."
 
@@ -341,7 +333,7 @@ label choice5c:
 
 label choice5d:
   show facetime demi
-  "Demi rolls her eyes so hard you can hear it in her voice."
+  "I laugh Demi rolls her eyes so hard I can hear it in her voice."
 
   d "Soo mature."
 
@@ -360,30 +352,29 @@ label idea:
   show chatbox cameron at truecenter
   
   menu:
-    "What do you do?"
-
-    "I like your background":
+    "Ahh what do I say?"
+    
+    "Compliment":
       jump choice7
 
-    "I like you":
+    "Flirt":
       jump choice8
 
-    "Will you be mein Valen-stein?":
+    "Ask Demi":
       jump choice9
 
 label choice7:
   show chatbox cameron typing_i_like_you at truecenter
-  you "Okay I like your-"
+  you "Okay I'll say something nice. I like your-"
 
   show chatbox cameron i_like_you at truecenter
-  "You type out 'I like you' and accidentally click 'send'."
+  "I type out 'I like you' and accidentally click 'send'."
   
   you "FUCK! SHIT! DAMNIT!"
 
   d "Woahh there."
 
   menu:
-    "What do you do?"
 
     "Quickly send 'R background'":
       $fixed_message = True
@@ -393,41 +384,44 @@ label choice7:
       jump choice11
 
 label choice8:
-  d "Just tell him you like him! Cut straight to the chase."
+  you "Your good at this stuff. What's something like flirty I can say?"
 
-  you "NO WAY! Are you trying to make me sound like a creep?"
+  d "Stop, just tell him you like him! Cut straight to the chase."
+
+  you "NO WAY! I'll sound like a total creep!"
 
   "Demi shrungs."
 
   d "Boys are dumb and oblivious, you've gotta cut straight to the chase. (that's why I like girls..)"
 
-  "You roll your eyes."
+  "I roll your eyes."
 
   you "Okay how about"
 
   menu:
-    "I like your background":
+    "Compliment":
       jump choice7
 
 label choice9:
-  d "How about will you be mein Valen-{i}stein{/i}?"
+  you "Come on, you've gotta help me."
+
+  d "Ok, ok, how about will you be mein Valen-{i}stein{/i}?"
 
   "She cracks up at her own joke."
 
   you "Ha ha very funny. How about -"
 
   menu:
-    "What do you do?"
 
-    "I like you":
+    "Flirt":
       jump choice8
 
-    "I like your background":
+    "Compliment":
       jump choice7
 
 label choice10:
   show chatbox cameron R_background at truecenter
-  "You quickly sends “R background” and then leap onto your bed."
+  "I quickly send “R background” and then leap onto my bed."
 
   you "I sent him ‘I like you’ instead of ‘I like your background’ I’m gonna die."
 
@@ -435,9 +429,9 @@ label choice10:
 
   d "Wait do you realize.. Nevermind."
 
-  "You screem into a pillow"
-
-  jump scream_into_pillow
+  menu:
+    "Scream into a pillow":
+      jump scream_into_pillow
 
 label choice11:
   "You leap onto your bed."
@@ -448,17 +442,19 @@ label choice11:
 
   d "Wait do you realize.. Nevermind."
 
-  "You screem into a pillow"
-
-  jump scream_into_pillow
+  menu:
+    "Scream into a pillow":
+      jump scream_into_pillow
 
 label scream_into_pillow:
   hide chatbox R_background
-  "Meanwhile a ''new window'' pops up on the screen. The video is turned off."
+  "I scream into my pillow."
+
+  "Just then I hear a sound from Zoom."
 
   d "Who's that?"
 
-  "You lift your face from your pillow."
+  "I lift my face from my pillow. A ''new window'' with their video turned off is now in the Zoom."
 
   you "Hmm?"
   

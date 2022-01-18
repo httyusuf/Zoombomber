@@ -422,11 +422,14 @@ label choice9:
 label choice10:
   show chatbox cameron R_background at truecenter
   "I quickly send “R background” and then leap onto my bed."
-
+  
+  hide chatbox cameron R_background
   you "I sent him ‘I like you’ instead of ‘I like your background’ I’m gonna die."
 
+  show outline Cameron
   "Cameron’s background is an empty casting couch scene."
 
+  show outline professor
   d "Wait do you realize.. Nevermind."
 
   menu:
@@ -436,10 +439,13 @@ label choice10:
 label choice11:
   "You leap onto your bed."
 
+  hide chatbox cameron R_background
   you "I sent him ‘I like you’ instead of ‘I like your background’ I’m gonna die."
 
+  show outline Cameron
   "Cameron’s background is an empty casting couch scene."
-
+  
+  show outline professor
   d "Wait do you realize.. Nevermind."
 
   menu:
@@ -447,14 +453,14 @@ label choice11:
       jump scream_into_pillow
 
 label scream_into_pillow:
-  hide chatbox R_background
+  hide chatbox cameron R_background
   "I scream into my pillow."
 
   "Just then I hear a sound from Zoom."
 
   d "Who's that?"
 
-  "I lift my face from my pillow. A ''new window'' with their video turned off is now in the Zoom."
+  "I lift my face from my pillow."
 
   you "Hmm?"
   
@@ -477,7 +483,7 @@ label scream_into_pillow:
   show Marcus small_background
 
 
-  "Suddenly the Zoom window takes over your laptop, entering fullscreen. Someone is 'sharing their screen'. You go back to your desk."
+  "Suddenly a new Zoom window takes over my laptop, entering fullscreen. Someone is 'sharing their screen'. I go back to my desk."
 
   you "What's going on?"
   
@@ -486,7 +492,7 @@ label scream_into_pillow:
 
   "Bloody, violent footage plays of butchers carving up pigs in a slaughterhouse underscored by loud METAL music."
 
-  "You jump back from your desk."
+  "I jump back from my desk."
 
   you "Oh my god!"
 
@@ -508,7 +514,6 @@ label scream_into_pillow:
   m "I'm not the one doing this!"
 
   show small_outline professor
-  show outline professor
   t "What is this Anya?"
 
   show small_outline Cameron
@@ -548,6 +553,8 @@ label scream_into_pillow:
   show outline Anaya
   a "Sorry everyone we got an anonymous “zoom bomber” or whatever. I kicked them out and turned off screen sharing. Sorry about that."
 
+  a "(Did I mention they don't pay me enough?)"
+
   show outline professor
   t "Okay calm down everyone. These trolls will not obstruct our learning."
 
@@ -556,7 +563,6 @@ label scream_into_pillow:
   t "Let us read aloud from Hugo Ball’s poem on page 83. Any volunteers?"
 
   menu:
-    "What do you do?"
 
     "Don't Volunteer":
       jump choice12
@@ -585,10 +591,9 @@ label choice12:
   show facetime demi
   d "[name] are you okay?"
 
-  "You're squeezing a teddy bear to within an inch of its life."
+  "I'm squeezing a teddy bear to within an inch of its life."
 
   menu:
-    "What do you do?"
 
     "No, I'm not":
       jump choice14
@@ -597,9 +602,9 @@ label choice12:
       jump choice15
 
 label choice13:
-  "Since you're textbook is open you consider volunteering..."
+  "Since my textbook is open I consider volunteering..."
 
-  "But you're too shaken up from what just happened."
+  "But I'm too shaken up from what just happened."
   
   show outline Frank
   "Thankfully Frank raises his hand. His voice fades into the background as he reads aloud in German."
@@ -607,10 +612,9 @@ label choice13:
   show facetime demi
   d "[name] are you okay?"
 
-  "You're squeezing a teddy bear to within an inch of its life."
+  "I'm squeezing a teddy bear to within an inch of its life."
 
   menu:
-    "What do you do?"
 
     "No, I'm not":
       jump choice14
@@ -623,14 +627,13 @@ label choice14:
 
   d "Yeah, that was.. weird."
 
-  "both of you are silent for a moment."
+  "We're both silent for a moment."
 
   d "Did Cameron message you back?"
 
-  "Oh yeah, you completely forgot!"
+  "Oh yeah, I completely forgot!"
 
   menu:
-    "What do you do?"
 
     "Open your chat box":
       jump choice16
@@ -640,11 +643,11 @@ label choice15:
 
   d "Yeah."
 
-  "both of you are silent for a moment."
+  "We're both silent for a moment."
 
   d "Did Cameron message you back?"
 
-  "Oh yeah, you completely forgot!"
+  "Oh yeah, I completely forgot!"
 
   menu:
     "What do you do?"
@@ -656,7 +659,7 @@ label choice16:
   # show cameron chatbox
   you "Wait he did!"
 
-  "Your mood instantly changes."
+  "My mood instantly changes."
 
   d "Awesome, what’d he say?"
 
@@ -667,7 +670,8 @@ label choice16:
     jump choice18      
 
 label choice17:
-  "You read Cameron's message."
+  show chatbox cameron haha_thanks at truecenter
+  "I read Cameron's message aloud."
 
   you "He said 'Haha Thanks'. Isn't he so sweet?"
 
@@ -675,16 +679,16 @@ label choice17:
 
   d "Someone's clearly smitten..."
 
-  "You start to type a reply, but something catches your attention."
+  "I start to type a reply, but something catches my attention."
 
   jump background_changed
 
 label choice18:
-  "You read Cameron's message."
+  "I read Cameron's message aloud"
 
   you "He just said, 'Uh thanks I guess?'"
 
-  "Blood drains from your face, as you realize-"
+  "Blood drains from my face, as I realize-"
 
   you "I NEVER FIXED MY MESSAGE! I just sent him 'I like you'!"
 
@@ -692,24 +696,37 @@ label choice18:
 
   you "Oh God how do I fix this??"
 
-  "You start to type a reply, but something catches your attention."
+  "I start to type a reply, but something catches my attention."
 
   jump background_changed
 
 label background_changed:
+  hide chatbox cameron haha_thanks
   #show masked figure
+
+  show outline Cameron
+  #masked figure sits on couch with face turned away
   "Now sitting on the couch in Cameron's virtual background is a FIGURE wearing a hoodie, their face obscured."
+
+  you "Wait his background changed."
 
   d "I guess?"
 
   you "Maybe I should ask him where he got it."
 
-  "The figure on the couch slowly turns towards the camera, revealing a creepy MASK."
+   #masked figure turns face
+  "The figure on the couch slowly turns towards the camera,"
+
+  #masked figure shows face
+  " revealing a creepy MASK."
 
   you "What the -"
   
-  #show masked figure
-  "Unnoticed by Cameron the Masked Figure gets up from the couch and creeps up behind him, pulling out a large butcher KNIFE."
+  #figure stands
+  "Unnoticed by Cameron the Masked Figure gets up from the couch"
+
+  #figure stands closer with knife
+  "and creeps up behind him, pulling out a large butcher KNIFE."
 
   menu:
     "What do you do?"
@@ -723,19 +740,33 @@ label background_changed:
 label Warn_Him:
    you "Cameron LOOK OUT!"
 
-   "You try to warn him but your {b}mic is muted!{/b} He can't hear you."
+   #figure gets even closer
+   "I try to warn him but my {b}mic is muted!{/b} He can't hear me."
    
    # show background glitch
-   "Cameron’s webcam GLITCHES and cuts to black. Then Cameron’s screen logs out of Zoom altogether."
+   "Cameron’s webcam GLITCHES "
+   
+   #window turns black 
+   " and cuts to black. "
+
+  #8 windows exists instead of 9
+   " Then Cameron’s screen logs out of Zoom altogether."
 
    d "What's going on? Are you ok?"
 
    jump Oh_my_God
 
 label SCREAM:
-  "You scream at the top of your lungs, but your ''mic is muted''. He can't hear you."
+  "I scream at the top of your lungs, but my {b}mic is muted!{/b} He can't hear me."
 
-  "Cameron’s webcam GLITCHES and cuts to black. Then Cameron’s screen logs out of Zoom altogether."
+  # show background glitch
+  "Cameron’s webcam GLITCHES "
+   
+  #window turns black 
+  " and cuts to black. "
+
+  #8 windows exists instead of 9
+  "Then Cameron’s screen logs out of Zoom altogether."
 
   d "Why are you screaming?!"
 

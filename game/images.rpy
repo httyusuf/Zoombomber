@@ -178,6 +178,9 @@ image chatbox cameron i_like_you:
 image chatbox cameron R_background:
   "chatbox cameron R_background.png"
 
+image chatbox cameron haha_thanks:
+  "chatbox cameron haha_thanks.png"
+
 
 
 # mute icons

@@ -128,8 +128,8 @@ image Paloma background:
    yanchor 0
 
 image Cameron background:
-   "playerwindowview.png"
-   xpos 440
+   "casting_couch.png"
+   xpos 460
    xanchor 0
    ypos 276
    yanchor 0
@@ -180,6 +180,9 @@ image chatbox cameron R_background:
 
 image chatbox cameron haha_thanks:
   "chatbox cameron haha_thanks.png"
+
+image chatbox cameron uh_thanks:
+  "chatbox cameron uh_thanks.png"
 
 
 
@@ -336,4 +339,35 @@ image small_outline Iman:
    ypos 574
    yanchor 0
 
+#share screen name
+image share_screen_name:
+  "sharescreenname.png"
+  xpos 377
+  xanchor 0
+  ypos 32
+  yanchor 0
 
+#hitler video
+image Nein = Movie(play="NEIN!.webm")
+
+#glitch animation
+image Cameron glitch:
+  "cameron_glitch1.png"
+  xpos 460
+  xanchor 0
+  ypos 276
+  yanchor 0
+  pause .5
+  "cameron_glitch2.png"
+  xpos 460
+  xanchor 0
+  ypos 276
+  yanchor 0
+  pause .5
+  "cameron_glitch3.png"
+  xpos 460
+  xanchor 0
+  ypos 276
+  yanchor 0
+  pause .5
+  repeat

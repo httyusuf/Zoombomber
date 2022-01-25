@@ -299,22 +299,24 @@ label choice6:
 
 label choice5a:
   hide chatbox everyone
-  # show Hitler Video
+  show Nein at truecenter
   "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
 
   "Unfortunately Cameron's isn't. Marcus cracks up, almost falling out of his chair."
 
   "I can't help but laugh."
+  hide Nein
   jump choice5c
 
 label choice5b:
   hide chatbox everyone
+  show Nein at truecenter
   "I ignore the link but Cameron clicks on it, forgetting his mic is not muted."
 
   "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully your mic is muted."
   
-  "I can't help but laugh"
-  # hide Htiler video
+  "I can't help but laugh."
+  hide Nein
   jump choice5d
 
 label choice5c:
@@ -481,6 +483,7 @@ label scream_into_pillow:
   show Paloma small_background
   show Cameron small_background
   show Marcus small_background
+  show share_screen_name
 
 
   "Suddenly a new Zoom window takes over my laptop, entering fullscreen. Someone is 'sharing their screen'. I go back to my desk."
@@ -531,6 +534,7 @@ label scream_into_pillow:
   hide Cameron small_background
   hide Marcus small_background
   hide small_outline Iman
+  hide share_screen_name
   show professor background
   show anaya background
   show Frank background
@@ -680,10 +684,11 @@ label choice17:
   d "Someone's clearly smitten..."
 
   "I start to type a reply, but something catches my attention."
-
+  hide chatbox cameron haha_thanks
   jump background_changed
 
 label choice18:
+  show chatbox cameron uh_thanks at truecenter
   "I read Cameron's message aloud"
 
   you "He just said, 'Uh thanks I guess?'"
@@ -695,16 +700,15 @@ label choice18:
   d "Uh oh.."
 
   you "Oh God how do I fix this??"
-
+  
+  hide chatbox cameron uh_thanks
   "I start to type a reply, but something catches my attention."
 
   jump background_changed
 
 label background_changed:
-  hide chatbox cameron haha_thanks
   #show masked figure
 
-  show outline Cameron
   #masked figure sits on couch with face turned away
   "Now sitting on the couch in Cameron's virtual background is a FIGURE wearing a hoodie, their face obscured."
 
@@ -743,10 +747,10 @@ label Warn_Him:
    #figure gets even closer
    "I try to warn him but my {b}mic is muted!{/b} He can't hear me."
    
-   # show background glitch
+   show Cameron glitch
    "Cameron’s webcam GLITCHES "
    
-   #window turns black 
+   hide Cameron glitch 
    " and cuts to black. "
 
   #8 windows exists instead of 9
@@ -759,10 +763,10 @@ label Warn_Him:
 label SCREAM:
   "I scream at the top of your lungs, but my {b}mic is muted!{/b} He can't hear me."
 
-  # show background glitch
+  show Cameron glitch
   "Cameron’s webcam GLITCHES "
    
-  #window turns black 
+  hide Cameron glitch 
   " and cuts to black. "
 
   #8 windows exists instead of 9

@@ -1,15 +1,15 @@
-I'm sorry, but an uncaught exception occurred.
+﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/images.rpy:177
-  File "game/script.rpy", line 134, in script
-    d "Hey girl!"
-ç
+While loading <'Image' u'NEIN!.webm'>:
+  File "game/script.rpy", line 303, in script
+    "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
+Exception: Could not load image u'NEIN!.webm': error('Unsupported image format',)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 134, in script
-    d "Hey girl!"
+  File "game/script.rpy", line 303, in script
+    "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 706, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1384, in say
@@ -24,27 +24,45 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2978, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3378, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 556, in visit_all
-    for d in self.visit():
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 649, in visit
-    block = self.compile()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 556, in compile
-    block = self.atl.compile(self.context)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 751, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 1016, in compile
-    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
-Exception: Could not evaluate expression u'IT0' when compiling ATL.
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3477, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2359, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 927, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/image.py", line 501, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/image.py", line 307, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 927, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 663, in load
+    surf = renpy.display.pgrender.load_image(f, filename)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/pgrender.py", line 165, in load_image
+    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
+Exception: Could not load image u'NEIN!.webm': error('Unsupported image format',)
 

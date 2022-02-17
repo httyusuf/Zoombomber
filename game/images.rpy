@@ -41,7 +41,7 @@ image playerwindowview:
 #video links
 image videolink = Text("{a=https://www.youtube.com/watch?v=5lbGAzo9RrM}https://youtu.be/5lbGAzo9RrM{/a}")
 
-#window outlines
+#window outlines for 9
 image outline player:
    "windowoutline.png"
    xpos 36
@@ -184,6 +184,9 @@ image chatbox cameron haha_thanks:
 image chatbox cameron uh_thanks:
   "chatbox cameron uh_thanks.png"
 
+image chatbox iman:
+  "chatbox iman.png"
+
 
 
 # mute icons
@@ -199,6 +202,20 @@ image mute_button mute:
   xpos 50
   xanchor 0
   ypos 230
+  yanchor 0
+
+image mute_button unmute6:
+  "unmute.png"
+  xpos 50
+  xanchor 0
+  ypos 230
+  yanchor 0
+
+image mute_button mute6:
+  "mute.png"
+  xpos 50
+  xanchor 0
+  ypos 330
   yanchor 0
 
 # incoming call image
@@ -371,3 +388,163 @@ image Cameron glitch:
   yanchor 0
   pause .5
   repeat
+
+#character backgrounds for 8
+image Marcus background8:
+   "playerwindowview.png"
+   xpos 440
+   xanchor 0
+   ypos 276
+   yanchor 0
+
+image Demi background8:
+   "playerwindowview.png"
+   xpos 840
+   xanchor 0
+   ypos 276
+   yanchor 0
+
+image Iman background8:
+   "playerwindowview.png"
+   xpos 241
+   xanchor 0
+   ypos 480
+   yanchor 0
+
+image Frank background8:
+   "playerwindowview.png"
+   xpos 641
+   xanchor 0
+   ypos 480
+   yanchor 0
+
+#window outline for 8
+image outline Marcus8:
+   "windowoutline.png"
+   xpos 436
+   xanchor 0
+   ypos 272
+   yanchor 0
+
+image outline Demi8:
+   "windowoutline.png"
+   xpos 836
+   xanchor 0
+   ypos 272
+   yanchor 0
+
+image outline Iman8:
+   "windowoutline.png"
+   xpos 237
+   xanchor 0
+   ypos 476
+   yanchor 0
+
+image outline Frank8:
+   "windowoutline.png"
+   xpos 637
+   xanchor 0
+   ypos 476
+   yanchor 0
+
+#character backgrounds for 7
+image Frank background7:
+   "playerwindowview.png"
+   xpos 441
+   xanchor 0
+   ypos 480
+   yanchor 0
+
+#window outline for 7
+image outline Frank7:
+   "windowoutline.png"
+   xpos 437
+   xanchor 0
+   ypos 476
+   yanchor 0
+
+#character backgrounds for 6
+image playerwindowview6:
+   "playerwindowview.png"
+   xpos 40
+   xanchor 0
+   ypos 174
+   yanchor 0
+
+image professor background6:
+   "playerwindowview.png"
+   xpos 440
+   xanchor 0
+   ypos 174
+   yanchor 0
+
+image anaya background6:
+   "Anaya Background.png"
+   xpos 840
+   xanchor 0
+   ypos 174
+   yanchor 0
+
+image Paloma background6:
+   "playerwindowview.png"
+   xpos 40
+   xanchor 0
+   ypos 378
+   yanchor 0
+
+image Marcus background6:
+   "playerwindowview.png"
+   xpos 440
+   xanchor 0
+   ypos 378
+   yanchor 0
+
+image Frank background6:
+   "playerwindowview.png"
+   xpos 840
+   xanchor 0
+   ypos 378
+   yanchor 0
+
+#window outlines for 6
+image outline player6:
+   "windowoutline.png"
+   xpos 36
+   xanchor 0
+   ypos 170
+   yanchor 0
+
+image outline professor6:
+   "windowoutline.png"
+   xpos 436
+   xanchor 0
+   ypos 170
+   yanchor 0
+
+image outline Anaya6:
+   "windowoutline.png"
+   xpos 836
+   xanchor 0
+   ypos 170
+   yanchor 0
+
+image outline Paloma6:
+   "windowoutline.png"
+   xpos 36
+   xanchor 0
+   ypos 374
+   yanchor 0
+
+image outline Marcus6:
+   "windowoutline.png"
+   xpos 436
+   xanchor 0
+   ypos 374
+   yanchor 0
+
+image outline Frank6:
+   "windowoutline.png"
+   xpos 836
+   xanchor 0
+   ypos 374
+   yanchor 0

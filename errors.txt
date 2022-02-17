@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 769: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    " Then Cameron’s screen logs out of Zoom altogether."
+File "game/script.rpy", line 967: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    "You SCREAM, just as Demi’s video logs out and she hangs up the phone."
     ^
 
 Ren'Py Version: Ren'Py 7.4.0.1167
-Mon Jan 17 22:00:41 2022
+Tue Feb 15 15:31:39 2022

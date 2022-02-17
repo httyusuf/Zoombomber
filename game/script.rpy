@@ -753,7 +753,13 @@ label Warn_Him:
    hide Cameron glitch 
    " and cuts to black. "
 
-  #8 windows exists instead of 9
+   #8 windows exists instead of 9
+   show Marcus background8
+   show Demi background8
+   show Iman background8
+   show Frank background8
+   show outline Frank8
+
    " Then Cameron’s screen logs out of Zoom altogether."
 
    d "What's going on? Are you ok?"
@@ -770,6 +776,11 @@ label SCREAM:
   " and cuts to black. "
 
   #8 windows exists instead of 9
+  show Marcus background8
+  show Demi background8
+  show Iman background8
+  show Frank background8
+  show outline Frank8
   "Then Cameron’s screen logs out of Zoom altogether."
 
   d "Why are you screaming?!"
@@ -785,10 +796,12 @@ label Oh_my_God:
 
   d "What’re you talking about his laptop probably died."
 
+  hide Iman background8
   you "No I’m telling you I saw someone move on his screen."
 
   d "Are you sure it wasn’t just his background?"
 
+  show Iman background8
   "The Masked Figure reappears, now in the back of Iman’s screen."
 
   you "Look it's on Iman's now!"
@@ -796,10 +809,10 @@ label Oh_my_God:
   menu:
     "What do you do?"
 
-    "Turn on your mic":
+    "Turn on mic":
       jump Turn_on_mic
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
     "Send a chat message":
@@ -811,71 +824,94 @@ label Oh_my_God:
 
 label Turn_on_mic:
   show mute_button unmute
-  "You turn on your mic."
+  "I turn on your mic."
 
   you "I-man ... Run!"
 
-  "But your audio is full of static, Iman can't hear you."
+  "But my audio is still full of static, Iman can't hear me."
 
   you "Damnit!"
   
   show mute_button mute
-  "You mute your mic."
+  "I mute my mic."
 
   jump Send_chat_message
 
 label Turn_on_video:
-  "You turn on your video for the first time all class."
+  "I turn on my video for the first time all class and unmute."
 
   you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
   
   show outline Anaya
   a "[name]? What are you talking about?"
 
   you "In ... the ... videos! He .. has a knife!"
 
-  "Your voice trails off."
+  "My voice trails off..."
 
-  "You just noticed the figure behind you, ''on your own screen!''"
+  "I just noticed "
+
+  "the figure behind me, (bold)on my screen!"
 
   you "Like that."
 
   jump Bad_Ending
 
 label Send_chat_message:
-  # shoe chatbox Iman
-  "You frantically send Iman a private message."
-
+  # show chatbox Iman
+  "I frantically send Iman a private message."
+  
+  show chatbox iman at truecenter
   you "TURN AROUND!"
 
-  "But you're too late."
+  hide chatbox iman
+  "But I'm too late."
 
-  "The Masked Figure comes up behind her brandishing the same knife. Her screen cuts to STATIC and then she too logs out."
+  "The Masked Figure comes up behind her brandishing the same knife."
 
-  "No!"
+  "Her screen cuts to STATIC"
 
-  d "Okay that’s kinda weird. Maybe the internet connection is wonky or-?"
+  hide Iman background
+  show Frank background7
+  show outline Frank7
+  "and then she too logs out."
+
+  you "No!"
+
+  d "Okay that's kinda weird. Maybe something is wrong with the internet connection?"
+
+  d "Let me try popping back into the Zoom."
+
+  you "Uh... Okay..?"
+
+  # remove demi
+  "Demi's square dissappears briefly."
+
+  # bring back demi on 
+  "When she reenters the Zoom, her video is on."
+
+  d "See nothing- Oops forgot everyone can see me."
 
   "The figure reappears a 3rd time, now in ''Demi’s background''!"
 
   if screenshot_iman:
-    menu: 
-      "What do you do?"
+    menu:
 
       "Tell her to turn around":
         jump Turn_around
 
-      "Turn_on_video":
+      "Turn on video":
         jump Turn_on_video
 
   else:
     menu:
-      "What do you do?"
 
       "Tell her to turn around":
         jump Turn_around
 
-      "Turn_on_video":
+      "Turn on video":
         jump Turn_on_video
 
       "Take a screen shot":
@@ -884,30 +920,28 @@ label Send_chat_message:
 
 label Take_screenshot:
   # animate flash
-  "You quickly take a screenshot of Iman's screen. The Masked Figure still looms behind her in the background."
+  "I quickly take a screenshot of Iman's screen. The Masked Figure still looms behind her in the background."
   
   menu:
-    "What do you do?"
 
-    "Turn on your mic":
+    "Turn on mic":
       jump Turn_on_mic
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
     "Send a chat message":
       jump Send_chat_message
 
 label option2:
-  "You quickly take a screenshot of Demi's screen. The Masked Figure still looms behind her in the background."
+  "I quickly take a screenshot of Demi's screen. The Masked Figure still looms behind her in the background."
 
   menu:
-    "What do you do?"
 
     "Tell her to turn around":
       jump Turn_around
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
 label Turn_around:
@@ -919,36 +953,62 @@ label Turn_around:
 
   d "Calm down there's no one here."
 
-  you "But I can see him"
+  you "But I can see him."
 
+  #show glitch and facetime fades to black screen
   "Demi’s screen glitches and suddenly the figure appears right over Demi’s shoulder. The mask fills the screen."
 
-  hide facetime demi 
-  "You SCREAM, just as Demi’s video logs out and she hangs up the phone."
+  hide facetime demi
+  hide playerwindowview
+  hide professor background 
+  hide anaya background
+  hide Paloma background
+  hide Marcus background8
+  hide Frank background7
+  hide Demi background8
+  show professor background6
+  show anaya background6
+  show Paloma background6
+  show Marcus background6
+  show Frank background6
+  show outline Frank6
+  hide text "[name]"
+  hide mute_button mute
+  show playerwindowview6
+  show mute_button mute6
+  show text "[name]":
+    xpos 238
+    xanchor 0.5
+    ypos 274
+    yanchor 0.5
+
+  "I SCREAM, just as Demi’s video logs out and she hangs up the phone."
 
   you "Demi? Demi! Are you okay? Where are you?"
 
   menu:
-    "What do you do?"
 
     "Call her back":
-
       jump Call_her_back
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
-    "Turn on you mic":
+    "Turn on mic":
       jump option3
 
 label Call_her_back:
   $choice_in_textbox = True
  
   #show facetime calling
-  "You pick up your phone and try to call her back, but there's nothing but a dial tone on the other end."
+  show facetime demi
+  "I pick up my phone and try to call her back, but there's nothing but a dial tone on the other end."
 
-  t "Hey why are people leaving. Class is not over! Stay on Zoom."
-  
+  ""
+
+  hide facetime demi
+  ""
+
   $renpy.set_style_preference("choice", "hidden_choice")
   menu:
     t " " 
@@ -956,105 +1016,107 @@ label Call_her_back:
     "Turn on your video":
       jump Turn_on_video
 
-    "Hey why are people leaving. Class is not over! Stay on Zoom.":
+    "Hey why are people leaving. Class is not over! You must stay on Zoom.":
       jump option4
 
 label option3:
-  "You take a deep breath and try to calm down. There must be some explanation for this."
+  "I take a deep breath and try to calm down. There must be some explanation for this."
 
   show mute_button unmute
-  "You turn on your mic."
+  "I turn on your mic."
 
   you "Um did  ..zzz ... ZZzzz"
 
-  "Your audio is full of static."
+  "My audio is full of static."
 
   t "Excuse me? Who is that? I can't hear you."
 
-  "You sigh, this isn't working."
+  "Sigh, this isn't working."
 
   menu:
-    "What do you do?"
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
 label option4:
-  "You watch in horror as the masked figure pops up in everyone's video one-by-one."
+  # animation of windows leaving 
+  "I watch in horror as the masked figure pops up in everyone's video one-by-one. The same sequence of events happens in each video. The knife, then a glitch, and then black."
 
-  "The same sequence of events happens in each video. The knife, then a glitch, and then black."
+  #3 boxes left
+  "The boxes drop off like dominoes until its only me, Anaya, and Paloma left, even the Professor is gone."
 
-  "The boxes drop off like dominoes until its only you, Anaya, and Marcus left."
-
-  m "Hello? Guys?"
+  p "Hello? Guys?"
 
   a "This isn't funny."
   
   $renpy.set_style_preference("choice", "default")
   menu:
-    "What do you do?"
 
-    "Turn on your video":
+    "Turn on video":
       jump Turn_on_video
 
-    "Turn on your mic":
+    "Turn on mic":
       jump option5
 
 label option5:
-  show mute_button unmute
+  show mute_button unmute6
   you "Did anyone else see the man in the mask?"
 
-  "Finally your audio comes through clearly."
+  "Finally, miraculously my audio comes through clearly."
 
   a "[name]? What are you talking about?"
 
   you "In the background of everyone's videos! He attacked them! He has a knife!"
 
-  m "I-I didn't see anyone.."
+  p "I-I didn't see anyone.."
 
   a "Is this some kind of joke? Now that you've finally decided to join class -"
 
   you "I'm serious!"
   
   menu:
-    "What do you do?"
 
     "Turn on your video":
       jump Bad_Ending_2
 
-    "Share your screen" if screenshot_iman:
+    "Share screen" if screenshot_iman:
       jump Share_your_screen
 
-    "Share your screen" if screenshot_demi:
+    "Share screen" if screenshot_demi:
       jump Share_your_screen
 
 label Share_your_screen:
   you "I have proof!"
 
-  "You pull up the screenshot you took earlier and share your screen."
+  "I pull up the screenshot I took earlier and share my screen."
 
-  m "Um okay, why are we looking at a picture of class?"
+  p "Um okay, why are we looking at a picture of class?"
+
+  a "There's no recording of the class allowed! I could write you up for this."
 
   if screenshot_iman:
-    you "Don't you see the guy behind Iman?"
+    you "Whatever. Don't you see the guy behind Iman?"
 
   if screenshot_demi:
-    you "Don't you see the guy behind Demi?"
+    you "Whatever. Don't you see the guy behind Demi?"
 
-  a "Nothing's there [name]."
+  p "Nothing's there [name]. I knew you were weird, but not like {i}that{/i} weird.."
 
   you "What he's right - "
 
   "Anaya cuts you off."
 
-  a "I think I'll end class early, there must be some connection issue. Look out for an email from me tomorrow okay?"
+  a "I think I'll end class early, there must be some connection issue."
+
+  a "and [name], we'll talk about this screenshotting business later..." 
+
+  a "Look out for an email from me tomorrow okay?"
 
   you "But-"
 
   a "Class is over."
 
   menu:
-    "What do you do?"
 
     "Logout":
       jump Good_ending
@@ -1071,17 +1133,17 @@ label Bad_Ending:
   jump Credits
 
 label Bad_Ending_2:
-  "You turn on your video for the first time all class."
+  "I turn on your video for the first time all class."
 
   you "I really saw someone I swear! He showed up right before they logged off. I don't know if its a virus or something but the guy looked pretty scary..."
 
-  "Your voice trails off."
+  "My voice trails off."
 
-  "You just noticed the figure behind you, ''on your own screen!''"
+  "I just noticed the figure behind you, {b}on my screen!{/b}"
 
   you "... Like that."
 
-  "You turn around."
+  "I turn around."
 
   jump Bad_Ending
 

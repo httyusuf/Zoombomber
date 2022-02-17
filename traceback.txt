@@ -1,68 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'NEIN!.webm'>:
-  File "game/script.rpy", line 303, in script
-    "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
-Exception: Could not load image u'NEIN!.webm': error('Unsupported image format',)
+Compiling ATL code at game/script.rpy:965
+  File "game/script.rpy", line 962, in script
+    show text "[name]":
+Exception: Could not evaluate expression u'S' when compiling ATL.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 303, in script
-    "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 706, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1384, in say
-    who(what, *args, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 1179, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 851, in do_display
-    **display_args)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 601, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2978, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3477, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2359, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 927, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/image.py", line 501, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/image.py", line 307, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 927, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 607, in render
-    return cache.get(self, render=True)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 271, in get
-    surf = image.load()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 663, in load
-    surf = renpy.display.pgrender.load_image(f, filename)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/pgrender.py", line 165, in load_image
-    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
-Exception: Could not load image u'NEIN!.webm': error('Unsupported image format',)
+  File "game/script.rpy", line 962, in script
+    show text "[name]":
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 1182, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 1152, in show_imspec
+    atl=atl)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 753, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 1103, in add
+    thing._show()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1117, in _show
+    super(ATLTransform, self)._show()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1086, in _show
+    self.update_state()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1105, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 588, in execute
+    block = self.compile()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 556, in compile
+    block = self.atl.compile(self.context)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 751, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 1016, in compile
+    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
+Exception: Could not evaluate expression u'S' when compiling ATL.
 

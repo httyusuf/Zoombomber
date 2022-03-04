@@ -37,7 +37,7 @@ play music "02 Like a Refreshing Sunrise.mp3"
 
 show playerwindow
 
-show text "[name]" at truecenter
+show text [name] at truecenter
 
 "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
 
@@ -46,7 +46,7 @@ hide text
 
 show playerwindowview
 
-show text "[name]":
+show text [name]:
     xpos 238
     xanchor 0.5
     ypos 172
@@ -126,13 +126,15 @@ label start_class:
   t "Fine, fine. In honor of {i}Valentinstag{/i} approaching, today we will be exploring some beautiful German poetry..."
 
   "Professor Stein drones on and on."
-
+  
+  show mute_button mute
   "I mute my mic and let out a sigh of relief. Suddenly my cell phone rings."
   
   # show incoming call photo in top right corner
   show phone_call demi
-  show mute_button mute
+ 
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
    "Pick up the phone.":
@@ -164,6 +166,7 @@ label choice2:
 
   d "Come on are you going to hide for the rest of the semester? It can’t be that bad."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "No it's even worse than you think":
@@ -179,6 +182,7 @@ label choice1A:
 
   d "I bet Cameron won't even notice."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Look at computer screen":
@@ -191,6 +195,7 @@ label choice1B:
 
   d "I bet Cameron won't even notice."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Look at computer screen":
@@ -216,6 +221,7 @@ label look_at_computer_screen:
 
   d "Oh sorry yeah. Just use a funny virtual background or something."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "You mean like Marcus?":
@@ -261,6 +267,7 @@ label Jerome:
   show outline professor
   t "Ahem. Everyone open your textbooks to Kapitel 9: {i}Romantische Worte{/i}."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Open your textbook":
@@ -276,6 +283,7 @@ label choice5:
   show chatbox everyone at truecenter
   "A message pops up in the Zoom chat box from 'Marcus' sent to 'Everyone'. It's a youtube link."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Click on it":
@@ -289,6 +297,7 @@ label choice6:
 
   "A message pops up in the Zoom chat box from 'Marcus' sent to 'Everyone'. It's a youtube link."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Click on it":
@@ -353,6 +362,7 @@ label idea:
   
   show chatbox cameron at truecenter
   
+  $renpy.set_style_preference("choice", "default")
   menu:
     "Ahh what do I say?"
     
@@ -376,6 +386,7 @@ label choice7:
 
   d "Woahh there."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Quickly send 'R background'":
@@ -400,6 +411,7 @@ label choice8:
 
   you "Okay how about"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
     "Compliment":
       jump choice7
@@ -434,6 +446,7 @@ label choice10:
   show outline professor
   d "Wait do you realize.. Nevermind."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
     "Scream into a pillow":
       jump scream_into_pillow
@@ -450,6 +463,7 @@ label choice11:
   show outline professor
   d "Wait do you realize.. Nevermind."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
     "Scream into a pillow":
       jump scream_into_pillow
@@ -471,7 +485,7 @@ label scream_into_pillow:
 
   hide playerwindowview
   hide mute_button
-  hide text "[name]"
+  hide text [name]
   hide outline professor
   hide Demi background
   hide Iman background
@@ -546,7 +560,7 @@ label scream_into_pillow:
   show playerwindowview
   show mute_button mute
 
-  show text "[name]":
+  show text [name]:
       xpos 238
       xanchor 0.5
       ypos 172
@@ -566,6 +580,7 @@ label scream_into_pillow:
 
   t "Let us read aloud from Hugo Ball’s poem on page 83. Any volunteers?"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Don't Volunteer":
@@ -597,6 +612,7 @@ label choice12:
 
   "I'm squeezing a teddy bear to within an inch of its life."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "No, I'm not":
@@ -618,6 +634,7 @@ label choice13:
 
   "I'm squeezing a teddy bear to within an inch of its life."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "No, I'm not":
@@ -637,6 +654,7 @@ label choice14:
 
   "Oh yeah, I completely forgot!"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Open your chat box":
@@ -653,8 +671,8 @@ label choice15:
 
   "Oh yeah, I completely forgot!"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
-    "What do you do?"
 
     "Open your chat box":
       jump choice16
@@ -732,8 +750,8 @@ label background_changed:
   #figure stands closer with knife
   "and creeps up behind him, pulling out a large butcher KNIFE."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
-    "What do you do?"
 
     "Warn Him!":
       jump Warn_Him
@@ -797,17 +815,21 @@ label Oh_my_God:
   d "What’re you talking about his laptop probably died."
 
   hide Iman background8
+  show Frank background7
+  show outline Frank7
   you "No I’m telling you I saw someone move on his screen."
 
   d "Are you sure it wasn’t just his background?"
 
   show Iman background8
+  show Frank background8
+  show outline Frank8
   "The Masked Figure reappears, now in the back of Iman’s screen."
 
   you "Look it's on Iman's now!"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
-    "What do you do?"
 
     "Turn on mic":
       jump Turn_on_mic
@@ -820,10 +842,11 @@ label Oh_my_God:
 
     "Take a screenshot":
       $screenshot_iman = True
-      jump Take_screenshot
+      jump Take_screenshot 
 
 label Turn_on_mic:
-  show mute_button unmute
+
+  show mute_button unmute6
   "I turn on your mic."
 
   you "I-man ... Run!"
@@ -838,24 +861,64 @@ label Turn_on_mic:
   jump Send_chat_message
 
 label Turn_on_video:
+  hide playerwindowview
+  hide mute_button
+  hide text [name]
+  hide outline Frank
+  hide professor background
+  hide anaya background
+  hide Paloma background
+  hide Cameron background
+  hide Marcus background
+  hide Demi background
+  hide Iman background
+  hide Frank background
+  hide facetime demi
+
+  show playerwindowview6
+  show professor background6
+  show anaya background6
+  show Paloma background6
+  show Marcus background6
+  show Frank background6
+  show text [name]:
+    xpos 238
+    xanchor 0.5
+    ypos 274
+    yanchor 0.5 
+
+  show mute_button unmute6
   "I turn on my video for the first time all class and unmute."
 
+  show outline player6
   you "Did anyone .. see ... mask?"
 
   "my audio cuts in and out."
   
-  show outline Anaya
+  show outline Anaya6
   a "[name]? What are you talking about?"
 
+  show outline player6
   you "In ... the ... videos! He .. has a knife!"
 
   "My voice trails off..."
 
   "I just noticed "
 
-  "the figure behind me, (bold)on my screen!"
+  "the figure behind me, {b}on my screen!{/b}"
 
   you "Like that."
+
+  hide playerwindowview6
+  hide professor background6
+  hide anaya background6
+  hide Paloma background6
+  hide Marcus background6
+  hide Frank background6
+  hide outline player6
+  hide mute_button mute6
+  hide text [name]
+  show playerwindow
 
   jump Bad_Ending
 
@@ -887,9 +950,59 @@ label Send_chat_message:
   you "Uh... Okay..?"
 
   # remove demi
+  hide facetime demi
+  hide playerwindowview
+  hide professor background 
+  hide anaya background
+  hide Paloma background
+  hide Marcus background8
+  hide Frank background7
+  hide Demi background8
+  show professor background6
+  show anaya background6
+  show Paloma background6
+  show Marcus background6
+  show Frank background6
+  show outline Frank6
+  hide text [name]
+  hide mute_button mute
+  show playerwindowview6
+  show mute_button mute6
+  show facetime demi
+  show text [name]:
+    xpos 238
+    xanchor 0.5
+    ypos 274
+    yanchor 0.5
   "Demi's square dissappears briefly."
 
-  # bring back demi on 
+  # bring back demi on
+  show playerwindowview
+  hide professor background6
+  show professor background
+  hide anaya background6 
+  show anaya background
+  hide Paloma background6
+  show Paloma background
+  hide Marcus background6
+  show Marcus background8
+  hide Frank background6
+  show Frank background7
+  show Demi background8
+  hide outline Frank6
+  show outline Frank7
+  hide text [name]
+  hide mute_button mute6
+  hide playerwindowview6
+  show mute_button mute
+  hide facetime demi
+  show facetime demi
+  show text [name]:
+    xpos 238
+    xanchor 0.5
+    ypos 172
+    yanchor 0.5
+
   "When she reenters the Zoom, her video is on."
 
   d "See nothing- Oops forgot everyone can see me."
@@ -897,6 +1010,7 @@ label Send_chat_message:
   "The figure reappears a 3rd time, now in ''Demi’s background''!"
 
   if screenshot_iman:
+    $renpy.set_style_preference("choice", "default")
     menu:
 
       "Tell her to turn around":
@@ -906,6 +1020,7 @@ label Send_chat_message:
         jump Turn_on_video
 
   else:
+    $renpy.set_style_preference("choice", "default")
     menu:
 
       "Tell her to turn around":
@@ -920,8 +1035,14 @@ label Send_chat_message:
 
 label Take_screenshot:
   # animate flash
+  # screenshot sound
+  define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
+
+  show bg zoom with flashbulb
+ 
   "I quickly take a screenshot of Iman's screen. The Masked Figure still looms behind her in the background."
   
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Turn on mic":
@@ -934,8 +1055,13 @@ label Take_screenshot:
       jump Send_chat_message
 
 label option2:
+  define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
+
+  show bg zoom with flashbulb
+
   "I quickly take a screenshot of Demi's screen. The Masked Figure still looms behind her in the background."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Tell her to turn around":
@@ -956,6 +1082,7 @@ label Turn_around:
   you "But I can see him."
 
   #show glitch and facetime fades to black screen
+  show facetime fade
   "Demi’s screen glitches and suddenly the figure appears right over Demi’s shoulder. The mask fills the screen."
 
   hide facetime demi
@@ -972,11 +1099,11 @@ label Turn_around:
   show Marcus background6
   show Frank background6
   show outline Frank6
-  hide text "[name]"
+  hide text [name]
   hide mute_button mute
   show playerwindowview6
   show mute_button mute6
-  show text "[name]":
+  show text [name]:
     xpos 238
     xanchor 0.5
     ypos 274
@@ -986,6 +1113,7 @@ label Turn_around:
 
   you "Demi? Demi! Are you okay? Where are you?"
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Call her back":
@@ -1022,31 +1150,55 @@ label Call_her_back:
 label option3:
   "I take a deep breath and try to calm down. There must be some explanation for this."
 
-  show mute_button unmute
+  show mute_button unmute6
   "I turn on your mic."
 
   you "Um did  ..zzz ... ZZzzz"
 
   "My audio is full of static."
 
+  show outline professor6
   t "Excuse me? Who is that? I can't hear you."
 
   "Sigh, this isn't working."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Turn on video":
       jump Turn_on_video
 
 label option4:
-  # animation of windows leaving 
+  # animationof windows leaving 
   "I watch in horror as the masked figure pops up in everyone's video one-by-one. The same sequence of events happens in each video. The knife, then a glitch, and then black."
+
+  hide playerwindowview6
+  hide professor background6
+  hide anaya background6
+  hide Paloma background6
+  hide Marcus background6
+  hide Frank background6
+  hide outline Frank6
+  hide mute_button mute6
+  hide text [name]
+
+  show playerwindowview3
+  show text [name]:
+    xpos 238
+    xanchor 0.5
+    ypos 344
+    yanchor 0.5
+  show mute_button mute3
+  show anaya background3
+  show Paloma background3
 
   #3 boxes left
   "The boxes drop off like dominoes until its only me, Anaya, and Paloma left, even the Professor is gone."
 
+  show outline Paloma3
   p "Hello? Guys?"
 
+  show outline Anaya3 
   a "This isn't funny."
   
   $renpy.set_style_preference("choice", "default")
@@ -1059,21 +1211,27 @@ label option4:
       jump option5
 
 label option5:
-  show mute_button unmute6
+  show mute_button unmute3
   you "Did anyone else see the man in the mask?"
 
   "Finally, miraculously my audio comes through clearly."
 
+  show outline Anaya3
   a "[name]? What are you talking about?"
 
+  show outline player3
   you "In the background of everyone's videos! He attacked them! He has a knife!"
 
+  show outline Paloma3
   p "I-I didn't see anyone.."
 
+  show outline Anaya3
   a "Is this some kind of joke? Now that you've finally decided to join class -"
-
+  
+  show outline player3
   you "I'm serious!"
   
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Turn on your video":
@@ -1086,60 +1244,73 @@ label option5:
       jump Share_your_screen
 
 label Share_your_screen:
+  show outline player3
   you "I have proof!"
 
   "I pull up the screenshot I took earlier and share my screen."
 
+  show outline Paloma3
   p "Um okay, why are we looking at a picture of class?"
 
+  show outline Anaya3
   a "There's no recording of the class allowed! I could write you up for this."
 
   if screenshot_iman:
+    show outline player3
     you "Whatever. Don't you see the guy behind Iman?"
 
   if screenshot_demi:
+    show outline player3
     you "Whatever. Don't you see the guy behind Demi?"
 
+  show outline Paloma3
   p "Nothing's there [name]. I knew you were weird, but not like {i}that{/i} weird.."
 
+  show outline player3
   you "What he's right - "
 
+  show outline Anaya3
   "Anaya cuts you off."
 
+  show outline Anaya3
   a "I think I'll end class early, there must be some connection issue."
 
   a "and [name], we'll talk about this screenshotting business later..." 
 
   a "Look out for an email from me tomorrow okay?"
 
+  show outline player3
   you "But-"
 
+  show outline Anaya3
   a "Class is over."
 
+  $renpy.set_style_preference("choice", "default")
   menu:
 
     "Logout":
       jump Good_ending
 
 label Bad_Ending:
-  "The Masked Figure is in your room, {b}he's real{/b}."
 
-  "There's nowhere to run, nowehere to hide."
+  "The Masked Figure is in my room, {b}he's real{/b}."
 
-  "The last thing you see is the flash of his knife before you die."
+  "There's nowhere to run, nowhere to hide."
+
+  "The last thing I see is the flash of his knife before I- "
 
   "{b}Bad Ending{/b}."
 
   jump Credits
 
 label Bad_Ending_2:
-  "I turn on your video for the first time all class."
+  "I turn on my video for the first time all class."
 
-  you "I really saw someone I swear! He showed up right before they logged off. I don't know if its a virus or something but the guy looked pretty scary..."
+  you "I really saw someone I swear! He showed up right before they logged off. I don't know if it's a virus or something but the guy looked pretty scary..."
 
-  "My voice trails off."
+  "My voice trails off..."
 
-  "I just noticed the figure behind you, {b}on my screen!{/b}"
+  "I just notice the figure is behind me now, {b}on my screen!{/b}"
 
   you "... Like that."
 
@@ -1148,11 +1319,34 @@ label Bad_Ending_2:
   jump Bad_Ending
 
 label Good_ending:
-  "Anaya ends the meeting, she pulls out her earbuds and laughs."
+  "I consider trying to plead my case but clearly these two are never going to believe me."
+
+  "Plus I might be in trouble?"
+
+  #show only player background, show desktop 
+  "I move my cursor to log out but then Anaya ends the class, booting us out of the Zoom."
+
+  "Well that was weird. I look at the clock on my desk, it's pretty late." 
+
+  "Maybe Anaya is right and I was just imagining things." 
+
+  "Maybe everyone just ran out of battery, or their Wifi signal dropped."
+
+  "Demi's phone probably died, that happens all the time."
+
+  "Yeah, I'll call Demi first thing in the morning, after she's recharged her phone." 
+
+  "I climb into bed and drift off to sleep."
+
+  "Safe and sound."
+
+  #start new sceen, no more zoom window, it's Anaya's computer showing her view from her webcam
+
+  "Anaya ends the Zoom meeting, pulls out her earbuds and laughs maniacally."
 
   "She turns to her younger brother JEROME, sitting at a souped up PC station next to her."
 
-  a "Nice hacking. The music was a great touch."
+  a "Nice Zoom-bombing. The music in that video was a great touch."
 
   j "Thanks. Can you log on now? Our team needs you."
 
@@ -1166,9 +1360,9 @@ label Good_ending:
 
   j "Huh?"
 
-  a "The mask in everyone's background."
+  a "The mask in everyone's background. The knife was a good touch too, super creepy."
 
-  j "What are you talking about? Can we just play?"
+  j "What are you talking about? What knife? Can we just play?"
 
   "A look of horror slowly dawns on Anaya's face."
 
@@ -1185,7 +1379,7 @@ label Credits:
 
   "Illustrations by: Toyin Yusuf"
 
-  "Coding by and Zoom layout by: Tobi Yusuf"
+  "Coding and Zoom layout by: Tobi Yusuf"
 
 
 return

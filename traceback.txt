@@ -1,36 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/script.rpy:965
-  File "game/script.rpy", line 962, in script
-    show text "[name]":
-Exception: Could not evaluate expression u'S' when compiling ATL.
+While running game code:
+  File "renpy/common/00start.rpy", line 205, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 379, in script
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 379, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 309, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 334, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+Exception: CoreAudio error (AudioQueueStart): -66681
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 962, in script
-    show text "[name]":
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 1182, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 1152, in show_imspec
-    atl=atl)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 753, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 1103, in add
-    thing._show()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1117, in _show
-    super(ATLTransform, self)._show()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1086, in _show
-    self.update_state()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/transform.py", line 1105, in update_state
-    fr = self.execute(self, self.st, self.at)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 588, in execute
-    block = self.compile()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 556, in compile
-    block = self.atl.compile(self.context)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 751, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/atl.py", line 1016, in compile
-    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
-Exception: Could not evaluate expression u'S' when compiling ATL.
+  File "renpy/common/00start.rpy", line 205, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 379, in script
+    $ __gl_test()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 913, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/python.py", line 2111, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gltest.rpy", line 379, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 309, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 334, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2941, in interact
+    self.start()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2033, in start
+    renpy.audio.audio.init()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 908, in init
+    renpysound.init(renpy.config.sound_sample_rate, 2, bufsize, False, renpy.config.equal_mono)
+  File "renpysound.pyx", line 387, in renpy.audio.renpysound.init
+  File "renpysound.pyx", line 97, in renpy.audio.renpysound.check_error
+Exception: CoreAudio error (AudioQueueStart): -66681
 

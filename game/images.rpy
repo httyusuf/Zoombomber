@@ -208,7 +208,7 @@ image mute_button unmute6:
   "unmute.png"
   xpos 50
   xanchor 0
-  ypos 230
+  ypos 330
   yanchor 0
 
 image mute_button mute6:
@@ -216,6 +216,20 @@ image mute_button mute6:
   xpos 50
   xanchor 0
   ypos 330
+  yanchor 0
+
+image mute_button mute3:
+  "mute.png"
+  xpos 50
+  xanchor 0
+  ypos 400
+  yanchor 0
+
+image mute_button unmute3:
+  "unmute.png"
+  xpos 50
+  xanchor 0
+  ypos 400
   yanchor 0
 
 # incoming call image
@@ -509,7 +523,7 @@ image Frank background6:
 #window outlines for 6
 image outline player6:
    "windowoutline.png"
-   xpos 36
+   xpos 35
    xanchor 0
    ypos 170
    yanchor 0
@@ -547,4 +561,55 @@ image outline Frank6:
    xpos 836
    xanchor 0
    ypos 374
+   yanchor 0
+
+
+#facetime demi fade to black animation
+image facetime fade:
+  "facetime.png"
+  "facetime_black.png" with dissolve
+
+# 3 window background
+image playerwindowview3:
+   "playerwindowview.png"
+   xpos 40
+   xanchor 0
+   ypos 244
+   yanchor 0
+
+image anaya background3:
+   "Anaya Background.png"
+   xpos 440
+   xanchor 0
+   ypos 244
+   yanchor 0
+
+image Paloma background3:
+   "playerwindowview.png"
+   xpos 840
+   xanchor 0
+   ypos 244
+   yanchor 0
+
+#window outlines for 3
+image outline player3:
+   "windowoutline.png"
+   xpos 35
+   xanchor 0
+   ypos 240
+   yanchor 0
+
+image outline Anaya3:
+   "windowoutline.png"
+   xpos 436
+   xanchor 0
+   ypos 240
+   yanchor 0
+
+
+image outline Paloma3:
+   "windowoutline.png"
+   xpos 836
+   xanchor 0
+   ypos 240
    yanchor 0

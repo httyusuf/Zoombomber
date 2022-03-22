@@ -1323,7 +1323,8 @@ label Good_ending:
 
   "Plus I might be in trouble?"
 
-  #show only player background, show desktop 
+  #show only player background, show desktop
+  scene bg player_desktop 
   "I move my cursor to log out but then Anaya ends the class, booting us out of the Zoom."
 
   "Well that was weird. I look at the clock on my desk, it's pretty late." 

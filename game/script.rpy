@@ -215,7 +215,7 @@ label look_at_computer_screen:
 
   "Demi takes a little too long to reply."
 
-  "Demi?"
+  you "Demi?"
 
   "Demi tears her eyes from the screen."
 
@@ -403,11 +403,11 @@ label choice8:
 
   you "NO WAY! I'll sound like a total creep!"
 
-  "Demi shrungs."
+  "Demi shrugs."
 
   d "Boys are dumb and oblivious, you've gotta cut straight to the chase. (that's why I like girls..)"
 
-  "I roll your eyes."
+  "I roll my eyes."
 
   you "Okay how about"
 
@@ -542,11 +542,11 @@ label scream_into_pillow:
   # go back to zoon layer out
   hide black_box
   hide small_playerwindow
-  hide professor small_background
-  hide Frank small_background
-  hide Paloma small_background
-  hide Cameron small_background
-  hide Marcus small_background
+  #hide professor small_background
+  #hide Frank small_background
+  #hide Paloma small_background
+  #hide Cameron small_background
+  #hide Marcus small_background
   hide small_outline Iman
   hide share_screen_name
   show professor background
@@ -835,7 +835,7 @@ label Oh_my_God:
       jump Turn_on_mic
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_1
 
     "Send a chat message":
       jump Send_chat_message
@@ -844,10 +844,11 @@ label Oh_my_God:
       $screenshot_iman = True
       jump Take_screenshot 
 
+#mix mic
 label Turn_on_mic:
 
-  show mute_button unmute6
-  "I turn on your mic."
+  show mute_button unmute
+  "I turn on my mic."
 
   you "I-man ... Run!"
 
@@ -909,6 +910,44 @@ label Turn_on_video:
 
   you "Like that."
 
+  hide playerwindowview6
+  hide professor background6
+  hide anaya background6
+  hide Paloma background6
+  hide Marcus background6
+  hide Frank background6
+  hide outline player6
+  hide mute_button mute6
+  hide text [name]
+  show playerwindow
+
+  jump Bad_Ending
+
+label Turn_on_video_1:
+
+  show mute_button unmute
+  "I turn on my video for the first time all class and unmute."
+
+  show outline player
+  you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
+  
+  show outline Anaya
+  a "[name]? What are you talking about?"
+
+  show outline player
+  you "In ... the ... videos! He .. has a knife!"
+
+  "My voice trails off..."
+
+  "I just noticed "
+
+  "the figure behind me, {b}on my screen!{/b}"
+
+  you "Like that."
+
+  hide facetime demi
   hide playerwindowview6
   hide professor background6
   hide anaya background6
@@ -1151,7 +1190,7 @@ label option3:
   "I take a deep breath and try to calm down. There must be some explanation for this."
 
   show mute_button unmute6
-  "I turn on your mic."
+  "I turn on my mic."
 
   you "Um did  ..zzz ... ZZzzz"
 

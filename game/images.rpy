@@ -121,8 +121,8 @@ image anaya background:
    yanchor 0
 
 image Paloma background:
-   "playerwindowview.png"
-   xpos 40
+   "Paloma background.png"
+   xpos 88
    xanchor 0
    ypos 276
    yanchor 0
@@ -149,7 +149,7 @@ image Demi background:
    yanchor 0
 
 image Iman background:
-   "playerwindowview.png"
+   "iman background.png"
    xpos 440
    xanchor 0
    ypos 480

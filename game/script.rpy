@@ -61,6 +61,7 @@ show Marcus background
 show Demi background
 show Iman background
 show Paloma background
+show Anaya talking
 
 "The white-haired PROFESSOR STEIN sits in the upper middle. Followed by the students, all in their early 20s:"
 

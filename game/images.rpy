@@ -8,8 +8,13 @@
 #	image Frank Stein talking
 #	image Cameron silent
 #	image Cameron talking
-#	image Anaya silent
-#	image Anaya talking
+#image Anaya silent:
+image Anaya talking:
+  "anaya talking.png"
+  xpos 836
+  xanchor 0
+  ypos 70
+  yanchor 0
 #	image Iman silent
 #	image Iman talking
 #  image paloma sweetshirt

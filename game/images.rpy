@@ -2,30 +2,89 @@
 # zoombg
 
 #character images
-#	image professor silent
+#image professor silent:
+ # "Professor silent.png"
+ # xpos 440
+ # xanchor 0
+ # ypos 72
+ # yanchor 0
+
 #	image professor talking
-#	image Frank Stein silent
-#	image Frank Stein talking
-#	image Cameron silent
+
+#image Frank silent:
+  #"Frank silent.png"
+  #xpos 840
+  #xanchor 0
+  #ypos 480
+  #yanchor 0
+
+#	image Frank talking
+
+#image Cameron silent:
+ # "Cameron silent"
+  #xpos 460
+  #xanchor 0
+  #ypos 276
+  #yanchor 0
+
 #	image Cameron talking
+
 #image Anaya silent:
-image Anaya talking:
-  "anaya talking.png"
-  xpos 836
-  xanchor 0
-  ypos 70
-  yanchor 0
-#	image Iman silent
+ # "anaya silent.png"
+  #xpos 836
+  #xanchor 0
+  #ypos 72
+  #yanchor 0
+
+#image Anaya talking:
+ # "anaya talking.png"
+  #xpos 836
+  #xanchor 0
+  #ypos 70
+  #yanchor 0
+
+#image Iman silent:
+ # "iman silent.png"
+  #xpos 440
+  #xanchor 0
+  #ypos 480
+  #yanchor 0
+
 #	image Iman talking
+
 #  image paloma sweetshirt
 #  image paloma remove_sweatshirt
 #  image paloma tanktop
 #  image paloma surprised
-#	image Marcus silent
+
+#image paloma silent:
+ # "Paloma silent.png"
+  #xpos 88
+  #xanchor 0
+  #ypos 276
+  #yanchor 0
+
+#image Marcus silent:
+ # "Marcus silent.png"
+  #xpos 840
+  #xanchor 0
+  #ypos 276
+  #yanchor 0
+
 #	image Marcus talking
-#	image Demi silent
+
+#image Demi silent:
+ # "demi silent.png"
+  #xpos 40
+  #xanchor 0
+  #ypos 480
+  #yanchor 0
+
 #	image Demi talking
-#	image Jerome silent
+
+#image Jerome silent:
+# "jerome silent.png"
+
 #	image Jerome talking
 
 #player images
@@ -133,11 +192,11 @@ image Paloma background:
    yanchor 0
 
 image Cameron background:
-   "casting_couch.png"
-   xpos 460
-   xanchor 0
-   ypos 276
-   yanchor 0
+  "Cameron background.png"
+  xpos 460
+  xanchor 0
+  ypos 276
+  yanchor 0
 
 image Marcus background:
    "playerwindowview.png"

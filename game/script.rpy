@@ -61,7 +61,62 @@ show Marcus background
 show Demi background
 show Iman background
 show Paloma background
-show Anaya talking
+
+show Anaya silent:
+  "anaya silent.png"
+  xpos 840
+  xanchor 0
+  ypos 72
+  yanchor 0
+
+show professor silent:
+  "Professor silent.png"
+  xpos 440
+  xanchor 0
+  ypos 72
+  yanchor 0
+
+show Frank silent:
+  "Frank silent.png"
+  xpos 840
+  xanchor 0
+  ypos 480
+  yanchor 0
+
+show Cameron silent:
+  "Cameron silent.png"
+  xpos 460
+  xanchor 0
+  ypos 276
+  yanchor 0
+
+show Iman silent:
+  "iman silent.png"
+  xpos 440
+  xanchor 0
+  ypos 480
+  yanchor 0
+
+show paloma silent:
+  "Paloma silent.png"
+  xpos 88
+  xanchor 0
+  ypos 276
+  yanchor 0
+
+show Marcus silent:
+  "Marcus silent.png"
+  xpos 840
+  xanchor 0
+  ypos 276
+  yanchor 0 
+
+show Demi silent:
+  "demi silent.png"
+  xpos 40
+  xanchor 0
+  ypos 480
+  yanchor 0
 
 "The white-haired PROFESSOR STEIN sits in the upper middle. Followed by the students, all in their early 20s:"
 

@@ -33,7 +33,7 @@ $ name = renpy.input("What is your name?")
 # the player's character
 define you = Character('[name]', color="#0080c0")
 
-play music "02 Like a Refreshing Sunrise.mp3"
+#play music "02 Like a Refreshing Sunrise.mp3"
 
 show playerwindow
 

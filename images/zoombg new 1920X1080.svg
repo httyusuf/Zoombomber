@@ -25,18 +25,18 @@
      fit-margin-left="0"
      fit-margin-top="0"
      inkscape:window-maximized="0"
-     inkscape:window-y="25"
-     inkscape:window-x="210"
-     inkscape:window-height="703"
-     inkscape:window-width="1277"
+     inkscape:window-y="33"
+     inkscape:window-x="0"
+     inkscape:window-height="934"
+     inkscape:window-width="1496"
      units="px"
      showgrid="false"
      inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer6"
      inkscape:document-units="mm"
-     inkscape:cy="487.8626"
-     inkscape:cx="1044.5897"
-     inkscape:zoom="0.29885037"
+     inkscape:cy="662.5471"
+     inkscape:cx="971.2344"
+     inkscape:zoom="0.47332784"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.24705882"
      borderopacity="1"
@@ -49,7 +49,7 @@
      inkscape:snap-midpoints="true"
      inkscape:pagecheckerboard="true"
      inkscape:lockguides="false"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true">
     <inkscape:grid
        originy="-2.6226044e-06"
@@ -57,7 +57,7 @@
        type="xygrid"
        id="grid859" />
     <sodipodi:guide
-       position="0.4976132,10.583352"
+       position="-63.72433,-116.38572"
        orientation="0,1"
        id="guide863"
        inkscape:locked="false"
@@ -121,7 +121,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -196,65 +196,66 @@
      id="layer4"
      inkscape:label="windows">
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-9"
-       width="235.68828"
-       height="118.76353"
-       x="499.85999"
-       y="42.723118" />
+       width="235.74597"
+       height="118.46942"
+       x="500.35901"
+       y="43.159039" />
     <rect
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
-       y="42.723114"
-       x="261.79327"
-       height="118.76353"
-       width="235.68828"
+       y="43.159039"
+       x="262.23401"
+       height="118.46942"
+       width="235.74597"
        id="rect888-9"
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593081;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
     <rect
-       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/playerwindow.png"
+       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888"
-       width="235.68828"
-       height="118.76353"
-       x="23.726557"
-       y="42.723118"
-       inkscape:export-xdpi="95.032745"
-       inkscape:export-ydpi="95.032745" />
+       width="235.74597"
+       height="118.46942"
+       x="24.109024"
+       y="43.159039"
+       inkscape:export-xdpi="96.080605"
+       inkscape:export-ydpi="96.080605" />
     <rect
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-0"
        width="235.68828"
        height="118.76353"
-       x="23.726547"
-       y="164.46835" />
+       x="24.109356"
+       y="164.60312" />
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-91"
-       width="235.68828"
-       height="118.76353"
-       x="261.79327"
-       y="164.46835" />
+       width="235.74597"
+       height="118.46942"
+       x="262.23401"
+       y="164.60278" />
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-5"
-       width="235.68828"
-       height="118.76353"
-       x="499.85995"
-       y="164.46835" />
+       width="235.74597"
+       height="118.46942"
+       x="500.35901"
+       y="164.60278" />
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-4"
-       width="235.68828"
-       height="118.76353"
-       x="23.726551"
-       y="286.21362" />
+       width="235.74597"
+       height="118.46942"
+       x="24.109024"
+       y="286.04654" />
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.59308;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-2"
-       width="235.68828"
-       height="118.76353"
-       x="261.7933"
-       y="286.21362" />
+       width="235.74597"
+       height="118.46942"
+       x="262.58685"
+       y="286.04654" />
     <rect
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect888-9-3"
@@ -1064,19 +1065,18 @@
     </g>
   </g>
   <g
-     sodipodi:insensitive="true"
      transform="translate(1.502037e-5)"
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="window outline"
-     style="display:none">
+     style="display:inline">
     <rect
-       style="display:inline;fill:none;stroke:#fffc00;stroke-width:3.5405;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#fffc00;stroke-width:2.37595;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect86"
-       width="357.13541"
-       height="180.26614"
-       x="22.817266"
-       y="133.71707"
+       width="238.7256"
+       height="121.44905"
+       x="466.16855"
+       y="458.96017"
        inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/windowoutline.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -1097,12 +1097,12 @@
        style="display:inline;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.593743;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1" />
   </g>
   <g
-     sodipodi:insensitive="true"
      transform="translate(1.502037e-5)"
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="chat box"
-     style="display:none;opacity:1">
+     style="display:none;opacity:1"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.32851px;line-height:1.25;font-family:sans-serif;display:none;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.0832128"
@@ -1115,12 +1115,12 @@
          y="0"
          style="fill:#ff0000;stroke-width:0.0832128">(Privately):</tspan></text>
     <rect
-       style="display:inline;fill:#1a1a1a;stroke:#080000;stroke-width:2.12167;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;fill:#1a1a1a;stroke:#080000;stroke-width:2.1193;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect80"
-       width="250.82712"
-       height="240.17238"
-       x="269.74973"
-       y="80.501091"
+       width="250.88852"
+       height="239.57758"
+       x="269.74854"
+       y="80.499901"
        inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/chatbox cameron dark.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -1834,12 +1834,12 @@
     </g>
   </g>
   <g
-     sodipodi:insensitive="true"
      transform="translate(1.502037e-5)"
      inkscape:label="Facetime"
      id="layer8"
      inkscape:groupmode="layer"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <rect
        y="32.582985"
        x="550.45447"
@@ -1854,12 +1854,12 @@
        inkscape:export-ydpi="96"
        inkscape:export-xdpi="96"
        inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/facetime_black.png"
-       style="display:inline;opacity:1;fill:#000000;stroke:#000000;stroke-width:6.56409;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#000000;stroke:#000000;stroke-width:6.55676;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.354521;stroke-opacity:1"
        id="rect119-7"
-       width="195.80153"
-       height="220.20732"
-       x="550.45447"
-       y="32.582973" />
+       width="195.84949"
+       height="219.66199"
+       x="550.45074"
+       y="32.579308" />
   </g>
   <g
      sodipodi:insensitive="true"
@@ -1869,15 +1869,15 @@
      id="layer3"
      inkscape:groupmode="layer">
     <rect
-       inkscape:export-ydpi="96"
-       inkscape:export-xdpi="96"
-       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/images/playerwindow.png"
-       y="42.425835"
-       x="23.430092"
-       height="362.8486"
-       width="714.20013"
+       inkscape:export-ydpi="95.943443"
+       inkscape:export-xdpi="95.943443"
+       inkscape:export-filename="/Users/tobiyusuf/Desktop/Zoombomber/game/images/playerwindowview.png"
+       y="43.1604"
+       x="24.110386"
+       height="362.84879"
+       width="713.77917"
        id="rect116"
-       style="display:inline;fill:#333333;stroke:#333333;stroke-width:0.595977;stroke-linejoin:round;stroke-dashoffset:0.354521;stroke-opacity:1" />
+       style="display:inline;fill:#333333;stroke:#333333;stroke-width:0.595801;stroke-linejoin:round;stroke-dashoffset:0.354521;stroke-opacity:1" />
   </g>
   <g
      sodipodi:insensitive="true"

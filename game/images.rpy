@@ -90,16 +90,16 @@
 #player images
 image playerwindow: 
    "playerwindow.png"
-   xpos 40
+   xpos 60
    xanchor 0
-   ypos 72
+   ypos 108
    yanchor 0
 
 image playerwindowview:
    "playerwindowview.png"
-   xpos 40
+   xpos 60
    xanchor 0
-   ypos 72
+   ypos 108
    yanchor 0
 
 #video links
@@ -108,122 +108,122 @@ image videolink = Text("{a=https://www.youtube.com/watch?v=5lbGAzo9RrM}https://y
 #window outlines for 9
 image outline player:
    "windowoutline.png"
-   xpos 36
+   xpos 54
    xanchor 0
-   ypos 68
+   ypos 102
    yanchor 0
 
 image outline professor:
    "windowoutline.png"
-   xpos 436
+   xpos 654
    xanchor 0
-   ypos 68
+   ypos 102
    yanchor 0
 
 image outline Anaya:
    "windowoutline.png"
-   xpos 836
+   xpos 1254
    xanchor 0
-   ypos 68
+   ypos 102
    yanchor 0
 
 image outline Paloma:
    "windowoutline.png"
-   xpos 36
+   xpos 54
    xanchor 0
-   ypos 272
+   ypos 408
    yanchor 0
 
 image outline Cameron:
    "windowoutline.png"
-   xpos 436
+   xpos 654
    xanchor 0
-   ypos 272
+   ypos 408
    yanchor 0
 
 image outline Marcus:
    "windowoutline.png"
-   xpos 836
+   xpos 1254
    xanchor 0
-   ypos 272
+   ypos 408
    yanchor 0
 
 image outline Demi:
    "windowoutline.png"
-   xpos 36
+   xpos 54
    xanchor 0
-   ypos 476
+   ypos 714
    yanchor 0
 
 image outline Iman:
    "windowoutline.png"
-   xpos 436
+   xpos 654
    xanchor 0
-   ypos 476
+   ypos 714
    yanchor 0
 
 image outline Frank:
    "windowoutline.png"
-   xpos 836
+   xpos 1254
    xanchor 0
-   ypos 476
+   ypos 714
    yanchor 0
 
 # character backgrounds
 image professor background:
-   "playerwindowview.png"
-   xpos 440
+   "playerwindow.png"
+   xpos 660
    xanchor 0
-   ypos 72
+   ypos 108
    yanchor 0
 
 image anaya background:
    "Anaya Background.png"
-   xpos 840
+   xpos 1260
    xanchor 0
-   ypos 72
+   ypos 108
    yanchor 0
 
 image Paloma background:
    "Paloma background.png"
-   xpos 88
+   xpos 60
    xanchor 0
-   ypos 276
+   ypos 414
    yanchor 0
 
 image Cameron background:
   "Cameron background.png"
-  xpos 460
+  xpos 693
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
 
 image Marcus background:
-   "playerwindowview.png"
-   xpos 840
+   "playerwindow.png"
+   xpos 1260
    xanchor 0
-   ypos 276
+   ypos 414
    yanchor 0
 
 image Demi background:
-   "playerwindowview.png"
-   xpos 40
+   "Demi background.png"
+   xpos 60
    xanchor 0
-   ypos 480
+   ypos 720
    yanchor 0
 
 image Iman background:
    "iman background.png"
-   xpos 440
+   xpos 660
    xanchor 0
-   ypos 480
+   ypos 720
    yanchor 0
 
 image Frank background:
-   "playerwindowview.png"
-   xpos 840
+   "playerwindow.png"
+   xpos 1260
    xanchor 0
-   ypos 480
+   ypos 720
    yanchor 0
 
 #chatboxes

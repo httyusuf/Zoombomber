@@ -1,46 +1,78 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+While loading <'Image' u'gui/textbox.png'>:
   File "game/script.rpy", line 42, in script
     "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-IOError: Couldn't find file '02 Like a Refreshing Sunrise.mp3'.
+  File "game/script.rpy", line 42, in script
+    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
+Exception: Could not load image u'gui/textbox.png': error('Unsupported image format',)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/main.py", line 617, in main
+    run(restart)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/execution.py", line 922, in run_context
+    context.run()
   File "game/script.rpy", line 42, in script
     "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 676, in execute
-    statement_name("say")
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 46, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1640, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2517, in do_with
-    clear=clear)
+  File "game/script.rpy", line 42, in script
+    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 706, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1384, in say
+    who(what, *args, **kwargs)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 1179, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 851, in do_display
+    **display_args)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 601, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2978, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3660, in interact_core
-    renpy.audio.audio.periodic()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 1106, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 1084, in periodic_thread_main
-    periodic_pass()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 1026, in periodic_pass
-    c.periodic()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 492, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/audio/audio.py", line 74, in load
-    rv = renpy.loader.load(fn)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/loader.py", line 766, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file '02 Like a Refreshing Sunrise.mp3'.
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3477, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2359, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 1184, in render
+    back = render(style.background, bw, bh, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 663, in load
+    surf = renpy.display.pgrender.load_image(f, filename)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/pgrender.py", line 165, in load_image
+    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
+Exception: Could not load image u'gui/textbox.png': error('Unsupported image format',)
 

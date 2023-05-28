@@ -35,24 +35,23 @@ define you = Character('[name]', color="#0080c0")
 
 #play music "02 Like a Refreshing Sunrise.mp3"
 
-show playerwindow
+show playerwindowview
 
 show text [name] at truecenter
 
 "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
 
-hide playerwindow
+hide playerwindowview
 hide text
 
-show playerwindowview
+show playerwindow
 
 show text [name]:
-    xpos 238
+    xpos 358
     xanchor 0.5
-    ypos 172
+    ypos 258
     yanchor 0.5
 
-show outline professor
 show professor background
 show anaya background
 show Frank background
@@ -61,61 +60,62 @@ show Marcus background
 show Demi background
 show Iman background
 show Paloma background
+show outline professor
 
 show Anaya silent:
   "anaya silent.png"
-  xpos 840
+  xpos 1260
   xanchor 0
-  ypos 72
+  ypos 108
   yanchor 0
 
 show professor silent:
   "Professor silent.png"
-  xpos 440
+  xpos 660
   xanchor 0
-  ypos 72
+  ypos 108
   yanchor 0
 
 show Frank silent:
   "Frank silent.png"
-  xpos 840
+  xpos 1260
   xanchor 0
-  ypos 480
+  ypos 720
   yanchor 0
 
 show Cameron silent:
   "Cameron silent.png"
-  xpos 460
+  xpos 693
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
 
 show Iman silent:
   "iman silent.png"
-  xpos 440
+  xpos 660
   xanchor 0
-  ypos 480
+  ypos 720
   yanchor 0
 
 show paloma silent:
   "Paloma silent.png"
-  xpos 88
+  xpos 60
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
 
 show Marcus silent:
   "Marcus silent.png"
-  xpos 840
+  xpos 1260
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0 
 
 show Demi silent:
   "demi silent.png"
-  xpos 40
+  xpos 60
   xanchor 0
-  ypos 480
+  ypos 720
   yanchor 0
 
 "The white-haired PROFESSOR STEIN sits in the upper middle. Followed by the students, all in their early 20s:"

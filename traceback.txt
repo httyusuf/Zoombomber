@@ -1,27 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/textbox.png'>:
-  File "game/script.rpy", line 42, in script
-    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
-  File "game/script.rpy", line 42, in script
-    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
-Exception: Could not load image u'gui/textbox.png': error('Unsupported image format',)
+While running game code:
+  File "game/script.rpy", line 158, in script
+    "She turns off her video in the class so we can talk."
+  File "renpy/common/00placeholder.rpy", line 202, in visit
+    return [ self.get_child() ]
+  File "renpy/common/00placeholder.rpy", line 179, in get_child
+    Text(text, pos=textpos, xanchor=0.5, yanchor=0.5, style="_default", color="#aaa", text_align=0.5),
+KeyError: u'Demi'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/bootstrap.py", line 326, in bootstrap
-    renpy.main.main()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/main.py", line 617, in main
-    run(restart)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/execution.py", line 922, in run_context
-    context.run()
-  File "game/script.rpy", line 42, in script
-    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
-  File "game/script.rpy", line 42, in script
-    "I log into the online class session for German 101 held on Zoom. Nine boxes fill the screen."
+  File "game/script.rpy", line 158, in script
+    "She turns off her video in the class so we can talk."
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 706, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1384, in say
@@ -36,43 +28,31 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2978, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3477, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2359, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 751, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/layout.py", line 1184, in render
-    back = render(style.background, bw, bh, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 607, in render
-    return cache.get(self, render=True)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 271, in get
-    surf = image.load()
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/im.py", line 663, in load
-    surf = renpy.display.pgrender.load_image(f, filename)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/pgrender.py", line 165, in load_image
-    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
-Exception: Could not load image u'gui/textbox.png': error('Unsupported image format',)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3378, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 556, in visit_all
+    for d in self.visit():
+  File "renpy/common/00placeholder.rpy", line 202, in visit
+    return [ self.get_child() ]
+  File "renpy/common/00placeholder.rpy", line 179, in get_child
+    Text(text, pos=textpos, xanchor=0.5, yanchor=0.5, style="_default", color="#aaa", text_align=0.5),
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/text/text.py", line 1525, in __init__
+    self.set_text(text, scope, substitute)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/text/text.py", line 1644, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'Demi'
 

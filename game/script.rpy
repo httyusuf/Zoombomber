@@ -44,7 +44,7 @@ show text [name] at truecenter
 hide playerwindowview
 hide text
 
-show playerwindow
+scene bg zoomwindows
 
 show text [name]:
     xpos 358
@@ -52,79 +52,23 @@ show text [name]:
     ypos 258
     yanchor 0.5
 
-show professor background
-show anaya background
-show Frank background
-show Cameron background
-show Marcus background
-show Demi background
-show Iman background
-show Paloma background
-show outline professor
+show Anaya silent
+show Professor silent
+show Frank silent
+show Cameron silent
+show Iman silent
+show Paloma silent
+show Marcus silent
+show Demi silent
 
-show Anaya silent:
-  "anaya silent.png"
-  xpos 1260
-  xanchor 0
-  ypos 108
-  yanchor 0
-
-show professor silent:
-  "Professor silent.png"
-  xpos 660
-  xanchor 0
-  ypos 108
-  yanchor 0
-
-show Frank silent:
-  "Frank silent.png"
-  xpos 1260
-  xanchor 0
-  ypos 720
-  yanchor 0
-
-show Cameron silent:
-  "Cameron silent.png"
-  xpos 693
-  xanchor 0
-  ypos 414
-  yanchor 0
-
-show Iman silent:
-  "iman silent.png"
-  xpos 660
-  xanchor 0
-  ypos 720
-  yanchor 0
-
-show paloma silent:
-  "Paloma silent.png"
-  xpos 60
-  xanchor 0
-  ypos 414
-  yanchor 0
-
-show Marcus silent:
-  "Marcus silent.png"
-  xpos 1260
-  xanchor 0
-  ypos 414
-  yanchor 0 
-
-show Demi silent:
-  "demi silent.png"
-  xpos 60
-  xanchor 0
-  ypos 720
-  yanchor 0
-
-"The white-haired PROFESSOR STEIN sits in the upper middle. Followed by the students, all in their early 20s:"
+show outline Professor
+"The white-haired Professor STEIN sits in the upper middle. Followed by the students, all in their early 20s:"
 
 show outline Anaya
 "ANAYA - the bored teacher’s assistant,"
 
 show outline Paloma
-"PALOMA - the hot Latin American foreign exchange student,"
+"Paloma - the hot Latin American foreign exchange student,"
 
 show outline Cameron
 "CAMERON - the cool, surfer, heartthrob,"
@@ -158,13 +102,15 @@ menu:
 label start_class:
   you "Another exciting day of German, I can't wait... syke! Kill me now."
 
-  show outline professor
+  show outline Professor
   t "Do we have everyone Anya?"
 
+  show Anaya talking
   show outline Anaya
   a "It's Anaya. A-NA-YA"
 
-  show outline professor
+  show Anaya silent
+  show outline Professor
   t "Right. Why can’t I see someone’s video? Who is that {color=#0080c0}[name]{/color}?"
 
   show mute_button unmute
@@ -178,7 +124,7 @@ label start_class:
   show outline Anaya
   a "Sounds like [name] is having wifi issues."
 
-  show outline professor
+  show outline Professor
   t "Fine, fine. In honor of {i}Valentinstag{/i} approaching, today we will be exploring some beautiful German poetry..."
 
   "Professor Stein drones on and on."
@@ -205,6 +151,22 @@ label scene_2:
 
   d "Hey girl!"
 
+  scene bg zoomwithoutdemi
+  
+  show Anaya silent
+  show Professor silent
+  show Frank silent
+  show Cameron silent
+  show Iman silent
+  show Paloma silent
+  show Marcus silent
+  show facetime demi
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
+
   "She turns off her video in the class so we can talk."
 
   you "Hey, I guess I was saved by these shitty headphones."
@@ -216,7 +178,7 @@ label choice2:
 
   you "No, my mic actually sucks. Think that's a good enough excuse to leave my camera off too?"
 
-  d "Yeah you can totally leave your camera and mic off for the rest of class. That's my plan anyways."
+  d "Yeah you can totally {b}leave your camera and mic off for the rest of class{/b}. That's my plan anyways."
 
   you "Ok good because I can NOT let Cameron see my room. I’ll never live this down."
 
@@ -258,7 +220,6 @@ label choice1B:
       jump look_at_computer_screen
 
 label look_at_computer_screen:
-  hide facetime demi 
 
   "Cameron, along with all of the boys in class (and Demi) all stare intently at their screens."
 
@@ -266,7 +227,7 @@ label look_at_computer_screen:
   show outline Paloma
   "Finally I notice Paloma taking off her sweatshirt revealing a paper thin tank top, and she’s clearly not wearing a bra."
   
-  # show palomao tanktop  
+  # show Palomao tanktop  
   you "Ugh why do I even try?"
 
   "Demi takes a little too long to reply."
@@ -287,9 +248,12 @@ label look_at_computer_screen:
       jump choice4
 
 label choice3:
+  hide facetime demi
   show outline Marcus
   "Marcus’s background is a pixelated closeup of Professor Stein’s baldspot."
 
+  show outline Professor
+  show facetime demi
   d "Uh maybe a little classier?"
 
   "Suddenly a loud noise pulls my attention back to class."
@@ -320,7 +284,7 @@ label Jerome:
 
   a "And this school doesn't pay me enough to move out of my parent's place. So... deal with it."
   
-  show outline professor
+  show outline Professor
   t "Ahem. Everyone open your textbooks to Kapitel 9: {i}Romantische Worte{/i}."
 
   $renpy.set_style_preference("choice", "default")
@@ -499,7 +463,7 @@ label choice10:
   show outline Cameron
   "Cameron’s background is an empty casting couch scene."
 
-  show outline professor
+  show outline Professor
   d "Wait do you realize.. Nevermind."
 
   $renpy.set_style_preference("choice", "default")
@@ -516,7 +480,7 @@ label choice11:
   show outline Cameron
   "Cameron’s background is an empty casting couch scene."
   
-  show outline professor
+  show outline Professor
   d "Wait do you realize.. Nevermind."
 
   $renpy.set_style_preference("choice", "default")
@@ -539,22 +503,22 @@ label scream_into_pillow:
   hide facetime demi 
   # show share screen layout
 
-  hide playerwindowview
   hide mute_button
   hide text [name]
-  hide outline professor
-  hide Demi background
-  hide Iman background
-  hide anaya background
-  show black_box
-  show small_playerwindow
-  show professor small_background
-  show Frank small_background
-  show Paloma small_background
-  show Cameron small_background
-  show Marcus small_background
-  show share_screen_name
-
+  hide outline Professor
+  show bg sharescreen
+  hide Professor silent
+  hide Anaya silent
+  hide Paloma silent
+  hide Cameron silent
+  hide Marcus silent
+  hide Iman silent
+  hide Frank silent
+  show text [name]:
+    xpos 1708
+    xanchor 0.5
+    ypos 154
+    yanchor 0.5
 
   "Suddenly a new Zoom window takes over my laptop, entering fullscreen. Someone is 'sharing their screen'. I go back to my desk."
 
@@ -586,7 +550,7 @@ label scream_into_pillow:
   show small_outline Marcus
   m "I'm not the one doing this!"
 
-  show small_outline professor
+  show small_outline Professor
   t "What is this Anya?"
 
   show small_outline Cameron
@@ -596,31 +560,22 @@ label scream_into_pillow:
   "The only one calm is Iman, who is preoccupied by a steaming bowl of popcorn."
   
   # go back to zoon layer out
-  hide black_box
-  hide small_playerwindow
-  #hide professor small_background
-  #hide Frank small_background
-  #hide Paloma small_background
-  #hide Cameron small_background
-  #hide Marcus small_background
+  scene bg zoomwithoutdemi
   hide small_outline Iman
-  hide share_screen_name
-  show professor background
-  show anaya background
-  show Frank background
-  show Cameron background
-  show Marcus background
-  show Demi background
-  show Iman background
-  show Paloma background
-  show playerwindowview
   show mute_button mute
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Cameron silent
+  show Marcus silent
+  show Iman silent
+  show Frank silent
 
   show text [name]:
-      xpos 238
-      xanchor 0.5
-      ypos 172
-      yanchor 0.5
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
 
   "Finally the video stops."
 
@@ -629,7 +584,7 @@ label scream_into_pillow:
 
   a "(Did I mention they don't pay me enough?)"
 
-  show outline professor
+  show outline Professor
   t "Okay calm down everyone. These trolls will not obstruct our learning."
 
   "He lets everyone have a moment to catch their breath."
@@ -648,7 +603,7 @@ label scream_into_pillow:
 label choice12:
   "Frank's hand shoots up."
   
-  show outline professor
+  show outline Professor
   t "Ahh Frank go ahead"
   
   show outline Cameron
@@ -821,19 +776,59 @@ label Warn_Him:
    #figure gets even closer
    "I try to warn him but my {b}mic is muted!{/b} He can't hear me."
    
+   scene bg zoomwithoutcameron
    show Cameron glitch
+   show mute_button mute
+   show Professor silent
+   show Anaya silent
+   show Paloma silent
+   show Marcus silent
+   show Iman silent
+   show Frank silent
+
+   show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
+
    "Cameron’s webcam GLITCHES "
    
-   hide Cameron glitch 
+   scene bg zoomwindows
+   show mute_button mute
+   show Professor silent
+   show Anaya silent
+   show Paloma silent
+   show Cameron silent
+   show Marcus silent
+   show Iman silent
+   show Frank silent
+
+   show text [name]:
+     xpos 358
+     xanchor 0.5
+     ypos 258
+     yanchor 0.5
+   
+   scene bg zoomwithoutcameron
    " and cuts to black. "
 
    #8 windows exists instead of 9
-   show Marcus background8
-   show Demi background8
-   show Iman background8
-   show Frank background8
-   show outline Frank8
+   scene bg zoom8windows
+   show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
 
+   show Professor silent
+   show Anaya silent
+   show Paloma silent
+   show Marcus silent8
+   show Demi silent8
+   show Iman silent8
+   show Frank silent8
+   
    " Then Cameron’s screen logs out of Zoom altogether."
 
    d "What's going on? Are you ok?"
@@ -843,18 +838,58 @@ label Warn_Him:
 label SCREAM:
   "I scream at the top of your lungs, but my {b}mic is muted!{/b} He can't hear me."
 
+  scene bg zoomwithoutcameron
+  show mute_button mute
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Marcus silent
+  show Iman silent
+  show Frank silent
+
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
   show Cameron glitch
+
   "Cameron’s webcam GLITCHES "
+
+  scene bg zoomwindows
+  show mute_button mute
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Cameron silent
+  show Marcus silent
+  show Iman silent
+  show Frank silent
+
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
    
-  hide Cameron glitch 
+  scene bg zoomwithoutcameron
   " and cuts to black. "
 
   #8 windows exists instead of 9
-  show Marcus background8
-  show Demi background8
-  show Iman background8
-  show Frank background8
-  show outline Frank8
+  scene bg zoom8windows
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
+
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Marcus silent8
+  show Demi silent8
+  show Iman silent8
+  show Frank silent8
   "Then Cameron’s screen logs out of Zoom altogether."
 
   d "Why are you screaming?!"
@@ -922,7 +957,7 @@ label Turn_on_video:
   hide mute_button
   hide text [name]
   hide outline Frank
-  hide professor background
+  hide Professor background
   hide anaya background
   hide Paloma background
   hide Cameron background
@@ -933,7 +968,7 @@ label Turn_on_video:
   hide facetime demi
 
   show playerwindowview6
-  show professor background6
+  show Professor background6
   show anaya background6
   show Paloma background6
   show Marcus background6
@@ -967,7 +1002,7 @@ label Turn_on_video:
   you "Like that."
 
   hide playerwindowview6
-  hide professor background6
+  hide Professor background6
   hide anaya background6
   hide Paloma background6
   hide Marcus background6
@@ -1005,7 +1040,7 @@ label Turn_on_video_1:
 
   hide facetime demi
   hide playerwindowview6
-  hide professor background6
+  hide Professor background6
   hide anaya background6
   hide Paloma background6
   hide Marcus background6
@@ -1047,13 +1082,13 @@ label Send_chat_message:
   # remove demi
   hide facetime demi
   hide playerwindowview
-  hide professor background 
+  hide Professor background 
   hide anaya background
   hide Paloma background
   hide Marcus background8
   hide Frank background7
   hide Demi background8
-  show professor background6
+  show Professor background6
   show anaya background6
   show Paloma background6
   show Marcus background6
@@ -1073,8 +1108,8 @@ label Send_chat_message:
 
   # bring back demi on
   show playerwindowview
-  hide professor background6
-  show professor background
+  hide Professor background6
+  show Professor background
   hide anaya background6 
   show anaya background
   hide Paloma background6
@@ -1182,13 +1217,13 @@ label Turn_around:
 
   hide facetime demi
   hide playerwindowview
-  hide professor background 
+  hide Professor background 
   hide anaya background
   hide Paloma background
   hide Marcus background8
   hide Frank background7
   hide Demi background8
-  show professor background6
+  show Professor background6
   show anaya background6
   show Paloma background6
   show Marcus background6
@@ -1252,7 +1287,7 @@ label option3:
 
   "My audio is full of static."
 
-  show outline professor6
+  show outline Professor6
   t "Excuse me? Who is that? I can't hear you."
 
   "Sigh, this isn't working."
@@ -1268,7 +1303,7 @@ label option4:
   "I watch in horror as the masked figure pops up in everyone's video one-by-one. The same sequence of events happens in each video. The knife, then a glitch, and then black."
 
   hide playerwindowview6
-  hide professor background6
+  hide Professor background6
   hide anaya background6
   hide Paloma background6
   hide Marcus background6

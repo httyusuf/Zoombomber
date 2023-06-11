@@ -2,99 +2,70 @@
 # zoombg
 
 #character images
-#image professor silent:
- # "Professor silent.png"
- # xpos 440
- # xanchor 0
- # ypos 72
- # yanchor 0
+image Anaya silent:
+  "anaya silent.png"
+  xpos 1260
+  xanchor 0
+  ypos 108
+  yanchor 0
 
-#	image professor talking
+image Professor silent:
+  "Professor silent.png"
+  xpos 660
+  xanchor 0
+  ypos 108
+  yanchor 0
 
-#image Frank silent:
-  #"Frank silent.png"
-  #xpos 840
-  #xanchor 0
-  #ypos 480
-  #yanchor 0
+image Frank silent:
+  "Frank silent.png"
+  xpos 1260
+  xanchor 0
+  ypos 720
+  yanchor 0
 
-#	image Frank talking
+image Cameron silent:
+  "Cameron silent.png"
+  xpos 660
+  xanchor 0
+  ypos 414
+  yanchor 0
 
-#image Cameron silent:
- # "Cameron silent"
-  #xpos 460
-  #xanchor 0
-  #ypos 276
-  #yanchor 0
+image Iman silent:
+  "iman silent.png"
+  xpos 660
+  xanchor 0
+  ypos 720
+  yanchor 0
 
-#	image Cameron talking
+image Paloma silent:
+  "Paloma silent.png"
+  xpos 60
+  xanchor 0
+  ypos 414
+  yanchor 0
 
-#image Anaya silent:
- # "anaya silent.png"
-  #xpos 836
-  #xanchor 0
-  #ypos 72
-  #yanchor 0
+image Marcus silent:
+  "Marcus silent.png"
+  xpos 1260
+  xanchor 0
+  ypos 414
+  yanchor 0 
 
-#image Anaya talking:
- # "anaya talking.png"
-  #xpos 836
-  #xanchor 0
-  #ypos 70
-  #yanchor 0
+image Demi silent:
+  "demi silent.png"
+  xpos 60
+  xanchor 0
+  ypos 720
+  yanchor 0
 
-#image Iman silent:
- # "iman silent.png"
-  #xpos 440
-  #xanchor 0
-  #ypos 480
-  #yanchor 0
-
-#	image Iman talking
-
-#  image paloma sweetshirt
-#  image paloma remove_sweatshirt
-#  image paloma tanktop
-#  image paloma surprised
-
-#image paloma silent:
- # "Paloma silent.png"
-  #xpos 88
-  #xanchor 0
-  #ypos 276
-  #yanchor 0
-
-#image Marcus silent:
- # "Marcus silent.png"
-  #xpos 840
-  #xanchor 0
-  #ypos 276
-  #yanchor 0
-
-#	image Marcus talking
-
-#image Demi silent:
- # "demi silent.png"
-  #xpos 40
-  #xanchor 0
-  #ypos 480
-  #yanchor 0
-
-#	image Demi talking
-
-#image Jerome silent:
-# "jerome silent.png"
-
-#	image Jerome talking
+image Anaya talking:
+  "anaya talking.png"
+  xpos 1260
+  xanchor 0
+  ypos 108
+  yanchor 0
 
 #player images
-image playerwindow: 
-   "playerwindow.png"
-   xpos 60
-   xanchor 0
-   ypos 108
-   yanchor 0
-
 image playerwindowview:
    "playerwindowview.png"
    xpos 60
@@ -113,7 +84,7 @@ image outline player:
    ypos 102
    yanchor 0
 
-image outline professor:
+image outline Professor:
    "windowoutline.png"
    xpos 654
    xanchor 0
@@ -169,63 +140,6 @@ image outline Frank:
    ypos 714
    yanchor 0
 
-# character backgrounds
-image professor background:
-   "playerwindow.png"
-   xpos 660
-   xanchor 0
-   ypos 108
-   yanchor 0
-
-image anaya background:
-   "Anaya Background.png"
-   xpos 1260
-   xanchor 0
-   ypos 108
-   yanchor 0
-
-image Paloma background:
-   "Paloma background.png"
-   xpos 60
-   xanchor 0
-   ypos 414
-   yanchor 0
-
-image Cameron background:
-  "Cameron background.png"
-  xpos 693
-  xanchor 0
-  ypos 414
-  yanchor 0
-
-image Marcus background:
-   "playerwindow.png"
-   xpos 1260
-   xanchor 0
-   ypos 414
-   yanchor 0
-
-image Demi background:
-   "Demi background.png"
-   xpos 60
-   xanchor 0
-   ypos 720
-   yanchor 0
-
-image Iman background:
-   "iman background.png"
-   xpos 660
-   xanchor 0
-   ypos 720
-   yanchor 0
-
-image Frank background:
-   "playerwindow.png"
-   xpos 1260
-   xanchor 0
-   ypos 720
-   yanchor 0
-
 #chatboxes
 image chatbox everyone:
   "chatbox everyone.png"
@@ -251,21 +165,19 @@ image chatbox cameron uh_thanks:
 image chatbox iman:
   "chatbox iman.png"
 
-
-
 # mute icons
 image mute_button unmute:
   "unmute.png"
-  xpos 50
+  xpos 69
   xanchor 0
-  ypos 230
+  ypos 355
   yanchor 0
 
 image mute_button mute:
   "mute.png"
-  xpos 50
+  xpos 61
   xanchor 0
-  ypos 230
+  ypos 355
   yanchor 0
 
 image mute_button unmute6:
@@ -299,148 +211,86 @@ image mute_button unmute3:
 # incoming call image
 image phone_call demi:
   "call.png"
-  xpos 950
+  xpos 1424
   xanchor 0
-  ypos 45
+  ypos 66
   yanchor 0
 
 # facetime image
 image facetime demi:
   "facetime.png"
-  xpos 920
+  xpos 1380
   xanchor 0
-  ypos 50
+  ypos 75
   yanchor 0
 
-#black box
-image black_box:
-  "black_box.png"
-  xpos 1060
+# demi's video off
+image demi_video_off:
+  "playerwindow.png"
+  xpos 60
   xanchor 0
-  ypos 34
+  ypos 718
   yanchor 0
 
-#small character backgrounds
-image small_playerwindow: 
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 38
-   yanchor 0
-
-image professor small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 146
-   yanchor 0
-
-image Frank small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 254
-   yanchor 0
-
-image Paloma small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 362
-   yanchor 0
-
-image Cameron small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 470
-   yanchor 0
-
-image Marcus small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 578
-   yanchor 0
-
-image Demi small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 578
-   yanchor 0
-
-image Iman small_background:
-   "small_player_window.png"
-   xpos 1064
-   xanchor 0
-   ypos 578
-   yanchor 0
+#Demi's name when video is off
+image demi = Text("Demi")
 
 #small window outlines
-image small_outline player:
+image small_outline Player:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 34
+   ypos 62
    yanchor 0
 
-image small_outline professor:
+image small_outline Professor:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 142
+   ypos 418
    yanchor 0
 
 image small_outline Frank:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 250
+   ypos 240
    yanchor 0
 
 image small_outline Paloma:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 358
+   ypos 596
    yanchor 0
 
 image small_outline Cameron:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 466
+   ypos 596
    yanchor 0
 
 image small_outline Marcus:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 574
+   ypos 240
    yanchor 0
 
 image small_outline Demi:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 574
+   ypos 418
    yanchor 0
 
 image small_outline Iman:
    "smallwindowoutline.png"
-   xpos 1060
+   xpos 1530
    xanchor 0
-   ypos 574
+   ypos 240
    yanchor 0
-
-#share screen name
-image share_screen_name:
-  "sharescreenname.png"
-  xpos 377
-  xanchor 0
-  ypos 32
-  yanchor 0
 
 #hitler video
 image Nein = Movie(play="NEIN!.webm")
@@ -448,53 +298,53 @@ image Nein = Movie(play="NEIN!.webm")
 #glitch animation
 image Cameron glitch:
   "cameron_glitch1.png"
-  xpos 460
+  xpos 693
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
   pause .5
   "cameron_glitch2.png"
-  xpos 460
+  xpos 693
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
   pause .5
   "cameron_glitch3.png"
-  xpos 460
+  xpos 693
   xanchor 0
-  ypos 276
+  ypos 414
   yanchor 0
   pause .5
   repeat
 
-#character backgrounds for 8
-image Marcus background8:
-   "playerwindowview.png"
-   xpos 440
-   xanchor 0
-   ypos 276
-   yanchor 0
+#characters for 8
+image Marcus silent8:
+  "Marcus silent.png"
+  xpos 660
+  xanchor 0
+  ypos 414
+  yanchor 0
 
-image Demi background8:
-   "playerwindowview.png"
-   xpos 840
-   xanchor 0
-   ypos 276
-   yanchor 0
+image Demi silent8:
+  "Demi silent.png"
+  xpos 1260
+  xanchor 0
+  ypos 414
+  yanchor 0
 
-image Iman background8:
-   "playerwindowview.png"
-   xpos 241
-   xanchor 0
-   ypos 480
-   yanchor 0
+image Iman silent8:
+  "Iman silent.png"
+  xpos 360
+  xanchor 0
+  ypos 720
+  yanchor 0
 
-image Frank background8:
-   "playerwindowview.png"
-   xpos 641
-   xanchor 0
-   ypos 480
-   yanchor 0
+image Frank silent8:
+  "Frank silent.png"
+  xpos 960
+  xanchor 0
+  ypos 720
+  yanchor 0
 
 #window outline for 8
 image outline Marcus8:
@@ -549,14 +399,14 @@ image playerwindowview6:
    ypos 174
    yanchor 0
 
-image professor background6:
+image Professor background6:
    "playerwindowview.png"
    xpos 440
    xanchor 0
    ypos 174
    yanchor 0
 
-image anaya background6:
+image Anaya background6:
    "Anaya Background.png"
    xpos 840
    xanchor 0
@@ -641,7 +491,7 @@ image playerwindowview3:
    ypos 244
    yanchor 0
 
-image anaya background3:
+image Anaya background3:
    "Anaya Background.png"
    xpos 440
    xanchor 0

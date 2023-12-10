@@ -231,7 +231,7 @@ style choice_vbox:
 init python:
   renpy.register_style_preference("choice", "hidden_choice", style.choice_vbox, "ypos", 700)
   renpy.register_style_preference("choice", "hidden_choice", style.choice_vbox, "spacing", 390)
-  renpy.register_style_preference("choice", "default", style.choice_vbox, "ypos", 370)
+  renpy.register_style_preference("choice", "default", style.choice_vbox, "ypos", 540)
   renpy.register_style_preference("choice", "default", style.choice_vbox, "spacing", 22)
 
 style choice_button is default:

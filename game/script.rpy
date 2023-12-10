@@ -152,7 +152,7 @@ label scene_2:
   d "Hey girl!"
 
   scene bg zoomwithoutdemi
-  
+  show outline Professor
   show Anaya silent
   show Professor silent
   show Frank silent
@@ -328,6 +328,16 @@ label choice6:
 
 label choice5a:
   hide chatbox everyone
+  show zoomwindows_blurred
+
+  #show Anaya blurred
+  #show Professor blurred
+  #show Paloma blurred
+  #show Cameron blurred
+  #show Marcus blurred 
+  #show Iman blurred 
+  #show Frank blurred
+
   show Nein at truecenter
   "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
 
@@ -335,10 +345,12 @@ label choice5a:
 
   "I can't help but laugh."
   hide Nein
+  hide zoomwindows_blurred
   jump choice5c
 
 label choice5b:
   hide chatbox everyone
+  show zoomwindows_blurred
   show Nein at truecenter
   "I ignore the link but Cameron clicks on it, forgetting his mic is not muted."
 
@@ -346,6 +358,7 @@ label choice5b:
   
   "I can't help but laugh."
   hide Nein
+  hide zoomwindows_blurred
   jump choice5d
 
 label choice5c:
@@ -785,6 +798,7 @@ label Warn_Him:
    show Marcus silent
    show Iman silent
    show Frank silent
+   show facetime demi
 
    show text [name]:
     xpos 358
@@ -803,6 +817,7 @@ label Warn_Him:
    show Marcus silent
    show Iman silent
    show Frank silent
+   show facetime demi
 
    show text [name]:
      xpos 358
@@ -811,6 +826,14 @@ label Warn_Him:
      yanchor 0.5
    
    scene bg zoomwithoutcameron
+   show mute_button mute
+   show Professor silent
+   show Anaya silent
+   show Paloma silent
+   show Marcus silent
+   show Iman silent
+   show Frank silent
+   show facetime demi
    " and cuts to black. "
 
    #8 windows exists instead of 9
@@ -825,9 +848,10 @@ label Warn_Him:
    show Anaya silent
    show Paloma silent
    show Marcus silent8
-   show Demi silent8
+   #show Demi silent8
    show Iman silent8
    show Frank silent8
+   show facetime demi
    
    " Then Cameron’s screen logs out of Zoom altogether."
 
@@ -846,6 +870,7 @@ label SCREAM:
   show Marcus silent
   show Iman silent
   show Frank silent
+  show facetime demi
 
   show text [name]:
     xpos 358
@@ -865,6 +890,7 @@ label SCREAM:
   show Marcus silent
   show Iman silent
   show Frank silent
+  show facetime demi
 
   show text [name]:
     xpos 358
@@ -873,6 +899,7 @@ label SCREAM:
     yanchor 0.5
    
   scene bg zoomwithoutcameron
+  show facetime demi
   " and cuts to black. "
 
   #8 windows exists instead of 9
@@ -890,6 +917,8 @@ label SCREAM:
   show Demi silent8
   show Iman silent8
   show Frank silent8
+  show facetime demi 
+
   "Then Cameron’s screen logs out of Zoom altogether."
 
   d "Why are you screaming?!"
@@ -905,16 +934,10 @@ label Oh_my_God:
 
   d "What’re you talking about his laptop probably died."
 
-  hide Iman background8
-  show Frank background7
-  show outline Frank7
   you "No I’m telling you I saw someone move on his screen."
 
   d "Are you sure it wasn’t just his background?"
 
-  show Iman background8
-  show Frank background8
-  show outline Frank8
   "The Masked Figure reappears, now in the back of Iman’s screen."
 
   you "Look it's on Iman's now!"
@@ -952,70 +975,8 @@ label Turn_on_mic:
 
   jump Send_chat_message
 
-label Turn_on_video:
-  hide playerwindowview
-  hide mute_button
-  hide text [name]
-  hide outline Frank
-  hide Professor background
-  hide anaya background
-  hide Paloma background
-  hide Cameron background
-  hide Marcus background
-  hide Demi background
-  hide Iman background
-  hide Frank background
-  hide facetime demi
-
-  show playerwindowview6
-  show Professor background6
-  show anaya background6
-  show Paloma background6
-  show Marcus background6
-  show Frank background6
-  show text [name]:
-    xpos 238
-    xanchor 0.5
-    ypos 274
-    yanchor 0.5 
-
-  show mute_button unmute6
-  "I turn on my video for the first time all class and unmute."
-
-  show outline player6
-  you "Did anyone .. see ... mask?"
-
-  "my audio cuts in and out."
-  
-  show outline Anaya6
-  a "[name]? What are you talking about?"
-
-  show outline player6
-  you "In ... the ... videos! He .. has a knife!"
-
-  "My voice trails off..."
-
-  "I just noticed "
-
-  "the figure behind me, {b}on my screen!{/b}"
-
-  you "Like that."
-
-  hide playerwindowview6
-  hide Professor background6
-  hide anaya background6
-  hide Paloma background6
-  hide Marcus background6
-  hide Frank background6
-  hide outline player6
-  hide mute_button mute6
-  hide text [name]
-  show playerwindow
-
-  jump Bad_Ending
-
 label Turn_on_video_1:
-
+  hide facetime demi
   show mute_button unmute
   "I turn on my video for the first time all class and unmute."
 
@@ -1038,17 +999,7 @@ label Turn_on_video_1:
 
   you "Like that."
 
-  hide facetime demi
-  hide playerwindowview6
-  hide Professor background6
-  hide anaya background6
-  hide Paloma background6
-  hide Marcus background6
-  hide Frank background6
-  hide outline player6
-  hide mute_button mute6
-  hide text [name]
-  show playerwindow
+  scene bg zoom
 
   jump Bad_Ending
 
@@ -1064,12 +1015,23 @@ label Send_chat_message:
 
   "The Masked Figure comes up behind her brandishing the same knife."
 
+  #show Iman glitch
   "Her screen cuts to STATIC"
 
-  hide Iman background
-  show Frank background7
-  show outline Frank7
-  "and then she too logs out."
+  #show 7 windows
+  scene bg zoom7windows
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 258
+    yanchor 0.5
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Marcus silent
+  show Frank silent7
+  show facetime demi
+  "and then she to logs out."
 
   you "No!"
 
@@ -1081,58 +1043,34 @@ label Send_chat_message:
 
   # remove demi
   hide facetime demi
-  hide playerwindowview
-  hide Professor background 
-  hide anaya background
-  hide Paloma background
-  hide Marcus background8
-  hide Frank background7
-  hide Demi background8
-  show Professor background6
-  show anaya background6
-  show Paloma background6
-  show Marcus background6
-  show Frank background6
-  show outline Frank6
-  hide text [name]
-  hide mute_button mute
-  show playerwindowview6
-  show mute_button mute6
-  show facetime demi
+  scene bg zoom7demiblack
   show text [name]:
-    xpos 238
+    xpos 358
     xanchor 0.5
-    ypos 274
+    ypos 258
     yanchor 0.5
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Marcus silent
+  show Frank silent7
+
   "Demi's square dissappears briefly."
 
   # bring back demi on
-  show playerwindowview
-  hide Professor background6
-  show Professor background
-  hide anaya background6 
-  show anaya background
-  hide Paloma background6
-  show Paloma background
-  hide Marcus background6
-  show Marcus background8
-  hide Frank background6
-  show Frank background7
-  show Demi background8
-  hide outline Frank6
-  show outline Frank7
-  hide text [name]
-  hide mute_button mute6
-  hide playerwindowview6
-  show mute_button mute
-  hide facetime demi
-  show facetime demi
+  scene bg zoom7demi
   show text [name]:
-    xpos 238
+    xpos 358
     xanchor 0.5
-    ypos 172
+    ypos 258
     yanchor 0.5
-
+  show Demi silent7
+  show Professor silent
+  show Anaya silent
+  show Paloma silent
+  show Marcus silent
+  show Frank silent7
+  show facetime demi
   "When she reenters the Zoom, her video is on."
 
   d "See nothing- Oops forgot everyone can see me."
@@ -1147,7 +1085,7 @@ label Send_chat_message:
         jump Turn_around
 
       "Turn on video":
-        jump Turn_on_video
+        jump Turn_on_video_1
 
   else:
     $renpy.set_style_preference("choice", "default")
@@ -1157,7 +1095,7 @@ label Send_chat_message:
         jump Turn_around
 
       "Turn on video":
-        jump Turn_on_video
+        jump Turn_on_video_1
 
       "Take a screen shot":
         $screenshot_demi = True
@@ -1168,7 +1106,7 @@ label Take_screenshot:
   # screenshot sound
   define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
 
-  show bg zoom with flashbulb
+  show bg zoom8windows with flashbulb
  
   "I quickly take a screenshot of Iman's screen. The Masked Figure still looms behind her in the background."
   
@@ -1179,7 +1117,7 @@ label Take_screenshot:
       jump Turn_on_mic
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_1
 
     "Send a chat message":
       jump Send_chat_message
@@ -1187,7 +1125,7 @@ label Take_screenshot:
 label option2:
   define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
 
-  show bg zoom with flashbulb
+  show bg zoom7demi with flashbulb
 
   "I quickly take a screenshot of Demi's screen. The Masked Figure still looms behind her in the background."
 
@@ -1198,7 +1136,7 @@ label option2:
       jump Turn_around
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_1
 
 label Turn_around:
   you "DEMI He's right behind you! Turn around!"
@@ -1215,29 +1153,18 @@ label Turn_around:
   show facetime fade
   "Demi’s screen glitches and suddenly the figure appears right over Demi’s shoulder. The mask fills the screen."
 
-  hide facetime demi
-  hide playerwindowview
-  hide Professor background 
-  hide anaya background
-  hide Paloma background
-  hide Marcus background8
-  hide Frank background7
-  hide Demi background8
-  show Professor background6
-  show anaya background6
-  show Paloma background6
-  show Marcus background6
-  show Frank background6
-  show outline Frank6
-  hide text [name]
-  hide mute_button mute
-  show playerwindowview6
-  show mute_button mute6
+  # show 6 windows
+  scene bg zoom6windows
   show text [name]:
-    xpos 238
+    xpos 358
     xanchor 0.5
-    ypos 274
+    ypos 410
     yanchor 0.5
+  show Professor silent6
+  show Anaya silent6
+  show Paloma silent6
+  show Marcus silent6
+  show Frank silent6 
 
   "I SCREAM, just as Demi’s video logs out and she hangs up the phone."
 
@@ -1250,7 +1177,7 @@ label Turn_around:
       jump Call_her_back
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_2
 
     "Turn on mic":
       jump option3
@@ -1272,9 +1199,9 @@ label Call_her_back:
     t " " 
 
     "Turn on your video":
-      jump Turn_on_video
+      jump Turn_on_video5
 
-    "Hey why are people leaving. Class is not over! You must stay on Zoom.":
+    "Class is not over! You must stay on Zoom.":
       jump option4
 
 label option3:
@@ -1296,33 +1223,43 @@ label option3:
   menu:
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_2
+
+label Turn_on_video_2:
+  hide facetime demi
+  show mute_button unmute6
+  "I turn on my video for the first time all class and unmute."
+
+  show outline player6
+  you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
+  
+  show outline Anaya6
+  a "[name]? What are you talking about?"
+
+  show outline player6
+  you "In ... the ... videos! He .. has a knife!"
+
+  "My voice trails off..."
+
+  "I just noticed "
+
+  "the figure behind me, {b}on my screen!{/b}"
+
+  you "Like that."
+
+  scene bg zoom
+
+  jump Bad_Ending
 
 label option4:
   # animationof windows leaving 
   "I watch in horror as the masked figure pops up in everyone's video one-by-one. The same sequence of events happens in each video. The knife, then a glitch, and then black."
-
-  hide playerwindowview6
-  hide Professor background6
-  hide anaya background6
-  hide Paloma background6
-  hide Marcus background6
-  hide Frank background6
-  hide outline Frank6
-  hide mute_button mute6
-  hide text [name]
-
-  show playerwindowview3
-  show text [name]:
-    xpos 238
-    xanchor 0.5
-    ypos 344
-    yanchor 0.5
-  show mute_button mute3
-  show anaya background3
-  show Paloma background3
-
+  
   #3 boxes left
+  scene bg zoom3windows
+
   "The boxes drop off like dominoes until its only me, Anaya, and Paloma left, even the Professor is gone."
 
   show outline Paloma3
@@ -1335,13 +1272,14 @@ label option4:
   menu:
 
     "Turn on video":
-      jump Turn_on_video
+      jump Turn_on_video_6
 
     "Turn on mic":
       jump option5
 
 label option5:
   show mute_button unmute3
+  show outline player3
   you "Did anyone else see the man in the mask?"
 
   "Finally, miraculously my audio comes through clearly."
@@ -1373,10 +1311,66 @@ label option5:
     "Share screen" if screenshot_demi:
       jump Share_your_screen
 
+label Turn_on_video5:
+  show mute_button unmute6
+  "I turn on my video for the first time all class and unmute."
+
+  show outline player6
+  you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
+  
+  show outline Anaya6
+  a "[name]? What are you talking about?"
+
+  show outline player6
+  you "In ... the ... videos! He .. has a knife!"
+
+  "My voice trails off..."
+
+  "I just noticed "
+
+  "the figure behind me, {b}on my screen!{/b}"
+
+  you "Like that."
+
+  scene bg zoom
+
+  jump Bad_Ending
+
+label Turn_on_video_6:
+  show mute_button unmute3
+  "I turn on my video for the first time all class and unmute."
+
+  show outline player3
+  you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
+  
+  show outline Anaya3
+  a "[name]? What are you talking about?"
+
+  show outline player3
+  you "In ... the ... videos! He .. has a knife!"
+
+  "My voice trails off..."
+
+  "I just noticed "
+
+  "the figure behind me, {b}on my screen!{/b}"
+
+  you "Like that."
+
+  scene bg zoom
+
+  jump Bad_Ending
+
 label Share_your_screen:
   show outline player3
   you "I have proof!"
 
+  #if screenshot_iman show Iman_screenshot
+  #if screenshot_demi show Demi_screenshot
   "I pull up the screenshot I took earlier and share my screen."
 
   show outline Paloma3
@@ -1434,26 +1428,47 @@ label Bad_Ending:
   jump Credits
 
 label Bad_Ending_2:
-  "I turn on my video for the first time all class."
+  show mute_button unmute3
+  "I turn on my video for the first time all class and unmute."
 
-  you "I really saw someone I swear! He showed up right before they logged off. I don't know if it's a virus or something but the guy looked pretty scary..."
+  show outline player6
+  you "Did anyone .. see ... mask?"
+
+  "my audio cuts in and out."
+  
+  show outline Anaya6
+  a "[name]? What are you talking about?"
+
+  show outline player6
+  you "In ... the ... videos! He .. has a knife!"
 
   "My voice trails off..."
 
-  "I just notice the figure is behind me now, {b}on my screen!{/b}"
+  "I just noticed "
 
-  you "... Like that."
+  "the figure behind me, {b}on my screen!{/b}"
 
-  "I turn around."
+  you "Like that."
 
+  hide playerwindowview6
+  hide Professor background6
+  hide anaya background6
+  hide Paloma background6
+  hide Marcus background6
+  hide Frank background6
+  hide outline player6
+  hide mute_button mute6
+  hide text [name]
+  show playerwindow
+
+  jump Bad_Ending
   jump Bad_Ending
 
 label Good_ending:
+   
   "I consider trying to plead my case but clearly these two are never going to believe me."
 
   "Plus I might be in trouble?"
-
-  #show only player background, show desktop
   scene bg player_desktop 
   "I move my cursor to log out but then Anaya ends the class, booting us out of the Zoom."
 
@@ -1473,6 +1488,9 @@ label Good_ending:
 
   #start new sceen, no more zoom window, it's Anaya's computer showing her view from her webcam
 
+  scene bg jerome_background
+  show Anaya silent2
+  show Jerome silent
   "Anaya ends the Zoom meeting, pulls out her earbuds and laughs maniacally."
 
   "She turns to her younger brother JEROME, sitting at a souped up PC station next to her."

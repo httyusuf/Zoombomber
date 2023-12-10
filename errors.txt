@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 801: expected statement.
-    bg zoomwithoutcameron
-                         ^
+File "game/script.rpy", line 1466: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "I consider trying to plead my case but clearly these two are never going to believe me."
+    ^
 
-Ren'Py Version: Ren'Py 7.4.0.1167
-Wed Jun  7 15:56:18 2023
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sun Jun 25 14:28:19 2023

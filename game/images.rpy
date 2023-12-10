@@ -76,6 +76,9 @@ image playerwindowview:
 #video links
 image videolink = Text("{a=https://www.youtube.com/watch?v=5lbGAzo9RrM}https://youtu.be/5lbGAzo9RrM{/a}")
 
+#blurred background
+image zoomwindows_blurred = im.Blur ("bg zoomwindows.png", 1.5)
+
 #window outlines for 9
 image outline player:
    "windowoutline.png"
@@ -182,9 +185,9 @@ image mute_button mute:
 
 image mute_button unmute6:
   "unmute.png"
-  xpos 50
+  xpos 69
   xanchor 0
-  ypos 330
+  ypos 507
   yanchor 0
 
 image mute_button mute6:
@@ -203,9 +206,9 @@ image mute_button mute3:
 
 image mute_button unmute3:
   "unmute.png"
-  xpos 50
+  xpos 69
   xanchor 0
-  ypos 400
+  ypos 612
   yanchor 0
 
 # incoming call image
@@ -295,34 +298,41 @@ image small_outline Iman:
 #hitler video
 image Nein = Movie(play="NEIN!.webm")
 
+#blurred background
+image zoomwindows_blurred = im.Blur("bg zoomwindows.png", 1.5)
+
+
 #glitch animation
 image Cameron glitch:
   "cameron_glitch1.png"
-  xpos 693
+  xpos 660
   xanchor 0
   ypos 414
   yanchor 0
   pause .5
   "cameron_glitch2.png"
-  xpos 693
+  xpos 660
   xanchor 0
   ypos 414
   yanchor 0
   pause .5
   "cameron_glitch3.png"
-  xpos 693
+  xpos 660
   xanchor 0
   ypos 414
   yanchor 0
   pause .5
   repeat
 
+#image Iman glitch:
+#image Demi glitch:
+
 #characters for 8
 image Marcus silent8:
   "Marcus silent.png"
-  xpos 660
+  xpos 360
   xanchor 0
-  ypos 414
+  ypos 720
   yanchor 0
 
 image Demi silent8:
@@ -334,9 +344,9 @@ image Demi silent8:
 
 image Iman silent8:
   "Iman silent.png"
-  xpos 360
+  xpos 660
   xanchor 0
-  ypos 720
+  ypos 414
   yanchor 0
 
 image Frank silent8:
@@ -375,14 +385,6 @@ image outline Frank8:
    ypos 476
    yanchor 0
 
-#character backgrounds for 7
-image Frank background7:
-   "playerwindowview.png"
-   xpos 441
-   xanchor 0
-   ypos 480
-   yanchor 0
-
 #window outline for 7
 image outline Frank7:
    "windowoutline.png"
@@ -391,69 +393,77 @@ image outline Frank7:
    ypos 476
    yanchor 0
 
-#character backgrounds for 6
-image playerwindowview6:
-   "playerwindowview.png"
-   xpos 40
+#characters for 7
+image Demi silent7:
+  "demi silent.png"
+  xpos 660
+  xanchor 0
+  ypos 414
+  yanchor 0
+
+image Frank silent7:
+  "Frank silent.png"
+  xpos 660
+  xanchor 0
+  ypos 720
+  yanchor 0
+
+#characters for 6
+image Professor silent6:
+   "Professor silent.png"
+   xpos 660
    xanchor 0
-   ypos 174
+   ypos 260
    yanchor 0
 
-image Professor background6:
-   "playerwindowview.png"
-   xpos 440
+image Anaya silent6:
+   "Anaya silent.png"
+   xpos 1260
    xanchor 0
-   ypos 174
+   ypos 260
    yanchor 0
 
-image Anaya background6:
-   "Anaya Background.png"
-   xpos 840
+image Paloma silent6:
+   "Paloma silent.png"
+   xpos 60
    xanchor 0
-   ypos 174
+   ypos 566
    yanchor 0
 
-image Paloma background6:
-   "playerwindowview.png"
-   xpos 40
+image Marcus silent6:
+   "Marcus silent.png"
+   xpos 660
    xanchor 0
-   ypos 378
+   ypos 566
    yanchor 0
 
-image Marcus background6:
-   "playerwindowview.png"
-   xpos 440
+image Frank silent6:
+   "Frank silent.png"
+   xpos 1260
    xanchor 0
-   ypos 378
-   yanchor 0
-
-image Frank background6:
-   "playerwindowview.png"
-   xpos 840
-   xanchor 0
-   ypos 378
+   ypos 566
    yanchor 0
 
 #window outlines for 6
 image outline player6:
    "windowoutline.png"
-   xpos 35
+   xpos 54
    xanchor 0
-   ypos 170
+   ypos 254
    yanchor 0
 
-image outline professor6:
+image outline Professor6:
    "windowoutline.png"
-   xpos 436
+   xpos 654
    xanchor 0
-   ypos 170
+   ypos 254
    yanchor 0
 
 image outline Anaya6:
    "windowoutline.png"
-   xpos 836
+   xpos 1254
    xanchor 0
-   ypos 170
+   ypos 254
    yanchor 0
 
 image outline Paloma6:
@@ -483,47 +493,44 @@ image facetime fade:
   "facetime.png"
   "facetime_black.png" with dissolve
 
-# 3 window background
-image playerwindowview3:
-   "playerwindowview.png"
-   xpos 40
-   xanchor 0
-   ypos 244
-   yanchor 0
-
-image Anaya background3:
-   "Anaya Background.png"
-   xpos 440
-   xanchor 0
-   ypos 244
-   yanchor 0
-
-image Paloma background3:
-   "playerwindowview.png"
-   xpos 840
-   xanchor 0
-   ypos 244
-   yanchor 0
-
 #window outlines for 3
 image outline player3:
    "windowoutline.png"
-   xpos 35
+   xpos 54
    xanchor 0
-   ypos 240
+   ypos 360
    yanchor 0
 
 image outline Anaya3:
    "windowoutline.png"
-   xpos 436
+   xpos 654
    xanchor 0
-   ypos 240
+   ypos 360
    yanchor 0
 
 
 image outline Paloma3:
    "windowoutline.png"
-   xpos 836
+   xpos 1254
    xanchor 0
-   ypos 240
+   ypos 360
+   yanchor 0
+
+#screen shot images
+#image Iman_screenshot:
+#image Demi_screenshot:
+
+#Anaya and Jerome alone
+image Anaya silent2:
+   "Anaya silent2.png"
+   xpos 0
+   xanchor 0
+   ypos 203
+   yanchor 0
+
+image Jerome silent:
+   "Jerome silent.png"
+   xpos 581
+   xanchor 0
+   ypos 203
    yanchor 0

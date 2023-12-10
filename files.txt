@@ -1,5 +1,5 @@
 .DS_Store
-02 Like a Refreshing Sunrise.mp3
+NEIN!.webm
 gui.rpy
 gui.rpyc
 images.rpy
@@ -12,105 +12,74 @@ screens.rpyc
 script.rpy
 script.rpyc
 script.rpy~
-audio/.DS_Store
-cache/bytecode.rpyb
+cache/bytecode-39.rpyb
+cache/py3analysis.rpyb
 cache/pyanalysis.rpyb
 cache/screens.rpyb
-gui/frame.png
-gui/game_menu.png
-gui/main_menu.png
-gui/namebox.png
-gui/notify.png
-gui/nvl.png
-gui/skip.png
-gui/textbox.png
-gui/textbox.xcf
-gui/window_icon.png
-gui/bar/bottom.png
-gui/bar/left.png
-gui/bar/right.png
-gui/bar/top.png
-gui/button/check_foreground.png
-gui/button/check_selected_foreground.png
-gui/button/choice_hover_background.png
-gui/button/choice_idle_background.png
-gui/button/hidden_choice_idle_background.png
-gui/button/hover_background.png
-gui/button/idle_background.png
-gui/button/quick_hover_background.png
-gui/button/quick_idle_background.png
-gui/button/radio_foreground.png
-gui/button/radio_selected_foreground.png
-gui/button/slot_hover_background.png
-gui/button/slot_idle_background.png
-gui/overlay/confirm.png
-gui/overlay/game_menu.png
-gui/overlay/main_menu.png
-gui/phone/nvl.png
-gui/phone/textbox.png
-gui/phone/bar/bottom.png
-gui/phone/bar/left.png
-gui/phone/bar/right.png
-gui/phone/bar/top.png
-gui/phone/button/check_foreground.png
-gui/phone/button/check_selected_foreground.png
-gui/phone/button/choice_hover_background.png
-gui/phone/button/choice_idle_background.png
-gui/phone/button/hover_background.png
-gui/phone/button/idle_background.png
-gui/phone/button/radio_foreground.png
-gui/phone/button/radio_selected_foreground.png
-gui/phone/button/slot_hover_background.png
-gui/phone/button/slot_idle_background.png
-gui/phone/overlay/game_menu.png
-gui/phone/overlay/main_menu.png
-gui/phone/scrollbar/horizontal_hover_bar.png
-gui/phone/scrollbar/horizontal_hover_thumb.png
-gui/phone/scrollbar/horizontal_idle_bar.png
-gui/phone/scrollbar/horizontal_idle_thumb.png
-gui/phone/scrollbar/vertical_hover_bar.png
-gui/phone/scrollbar/vertical_hover_thumb.png
-gui/phone/scrollbar/vertical_idle_bar.png
-gui/phone/scrollbar/vertical_idle_thumb.png
-gui/phone/slider/horizontal_hover_bar.png
-gui/phone/slider/horizontal_hover_thumb.png
-gui/phone/slider/horizontal_idle_bar.png
-gui/phone/slider/horizontal_idle_thumb.png
-gui/phone/slider/vertical_hover_bar.png
-gui/phone/slider/vertical_hover_thumb.png
-gui/phone/slider/vertical_idle_bar.png
-gui/phone/slider/vertical_idle_thumb.png
-gui/scrollbar/horizontal_hover_bar.png
-gui/scrollbar/horizontal_hover_thumb.png
-gui/scrollbar/horizontal_idle_bar.png
-gui/scrollbar/horizontal_idle_thumb.png
-gui/scrollbar/vertical_hover_bar.png
-gui/scrollbar/vertical_hover_thumb.png
-gui/scrollbar/vertical_idle_bar.png
-gui/scrollbar/vertical_idle_thumb.png
-gui/slider/horizontal_hover_bar.png
-gui/slider/horizontal_hover_thumb.png
-gui/slider/horizontal_idle_bar.png
-gui/slider/horizontal_idle_thumb.png
-gui/slider/vertical_hover_bar.png
-gui/slider/vertical_hover_thumb.png
-gui/slider/vertical_idle_bar.png
-gui/slider/vertical_idle_thumb.png
+cache/shaders.txt
 images/.DS_Store
 images/Anaya background.png
-images/Tobi.png
+images/Cameron background.png
+images/Cameron silent.png
+images/Demi background.png
+images/Frank silent.png
+images/Iman background.png
+images/Marcus silent.png
+images/Paloma background.png
+images/Paloma background2.png
+images/Paloma silent.png
+images/Professor silent.png
+images/anaya silent.png
+images/anaya talking.png
+images/bg player_desktop.png
+images/bg sharescreen.png
 images/bg wallpaper.jpg
 images/bg zoom.png
+images/bg zoom3windows.png
+images/bg zoom6windows.png
+images/bg zoom7demi.png
+images/bg zoom7demiblack.png
+images/bg zoom7windows.png
+images/bg zoom8windows.png
+images/bg zoomwindows.png
+images/bg zoomwithoutcameron.png
+images/bg zoomwithoutdemi.png
+images/black_box.png
+images/call.png
+images/cameron_glitch1.png
+images/cameron_glitch2.png
+images/cameron_glitch3.png
+images/chatbox cameron R_background.png
 images/chatbox cameron dark.png
+images/chatbox cameron haha_thanks.png
+images/chatbox cameron i_like_you.png
+images/chatbox cameron typing_i_like_you.png
+images/chatbox cameron uh_thanks.png
 images/chatbox cameron.png
 images/chatbox demi.png
 images/chatbox everyone.png
+images/chatbox iman.png
+images/demi silent.png
 images/facetime.png
+images/facetime_black.png
+images/g822.png
+images/iman silent.png
+images/jerome silent.png
+images/mute.png
 images/playerwindow.png
 images/playerwindowview.png
-images/tutorialbg.jpg
+images/sharescreenname.png
+images/small_player_window.png
+images/smallwindowoutline.png
+images/unmute.png
 images/windowoutline.png
-images/zoomwindows.png
+tl/None/common.rpym
+tl/None/common.rpymc
+saves/.auto-9-LT1 2.save.icloud
+saves/1-1-LT1.save
+saves/1-2-LT1.save
+saves/1-3-LT1.save
+saves/1-4-LT1.save
 saves/_reload-2-LT1.save
 saves/auto-1-LT1.save
 saves/auto-10-LT1.save
@@ -121,8 +90,115 @@ saves/auto-5-LT1.save
 saves/auto-6-LT1.save
 saves/auto-7-LT1.save
 saves/auto-8-LT1.save
+saves/auto-9-LT1 10.save
+saves/auto-9-LT1 11.save
+saves/auto-9-LT1 12.save
+saves/auto-9-LT1 13.save
+saves/auto-9-LT1 14.save
+saves/auto-9-LT1 15.save
+saves/auto-9-LT1 16.save
+saves/auto-9-LT1 17.save
+saves/auto-9-LT1 18.save
+saves/auto-9-LT1 19.save
+saves/auto-9-LT1 20.save
+saves/auto-9-LT1 21.save
+saves/auto-9-LT1 22.save
+saves/auto-9-LT1 23.save
+saves/auto-9-LT1 24.save
+saves/auto-9-LT1 25.save
+saves/auto-9-LT1 26.save
+saves/auto-9-LT1 27.save
+saves/auto-9-LT1 28.save
+saves/auto-9-LT1 3.save
+saves/auto-9-LT1 4.save
+saves/auto-9-LT1 5.save
+saves/auto-9-LT1 6.save
+saves/auto-9-LT1 7.save
+saves/auto-9-LT1 8.save
+saves/auto-9-LT1 9.save
 saves/auto-9-LT1.save
 saves/navigation.json
 saves/persistent
-tl/None/common.rpym
-tl/None/common.rpymc
+audio/.02 Like a Refreshing Sunrise.mp3.icloud
+audio/.DS_Store
+gui/.DS_Store
+gui/frame.png
+gui/game_menu.png
+gui/main_menu.png
+gui/namebox.png
+gui/notify.png
+gui/nvl.png
+gui/skip.png
+gui/textbox.png
+gui/window_icon.png
+gui/slider/horizontal_hover_bar.png
+gui/slider/horizontal_hover_thumb.png
+gui/slider/horizontal_idle_bar.png
+gui/slider/horizontal_idle_thumb.png
+gui/slider/vertical_hover_bar.png
+gui/slider/vertical_hover_thumb.png
+gui/slider/vertical_idle_bar.png
+gui/slider/vertical_idle_thumb.png
+gui/button/.DS_Store
+gui/button/check_foreground.png
+gui/button/check_selected_foreground.png
+gui/button/choice_hover_background.png
+gui/button/choice_idle_background.png
+gui/button/hover_background.png
+gui/button/idle_background.png
+gui/button/quick_hover_background.png
+gui/button/quick_idle_background.png
+gui/button/radio_foreground.png
+gui/button/radio_selected_foreground.png
+gui/button/slot_hover_background.png
+gui/button/slot_idle_background.png
+gui/phone/nvl.png
+gui/phone/textbox.png
+gui/phone/slider/horizontal_hover_bar.png
+gui/phone/slider/horizontal_hover_thumb.png
+gui/phone/slider/horizontal_idle_bar.png
+gui/phone/slider/horizontal_idle_thumb.png
+gui/phone/slider/vertical_hover_bar.png
+gui/phone/slider/vertical_hover_thumb.png
+gui/phone/slider/vertical_idle_bar.png
+gui/phone/slider/vertical_idle_thumb.png
+gui/phone/button/.DS_Store
+gui/phone/button/check_foreground.png
+gui/phone/button/check_selected_foreground.png
+gui/phone/button/choice_hover_background.png
+gui/phone/button/choice_idle_background.png
+gui/phone/button/hover_background.png
+gui/phone/button/idle_background.png
+gui/phone/button/radio_foreground.png
+gui/phone/button/radio_selected_foreground.png
+gui/phone/button/slot_hover_background.png
+gui/phone/button/slot_idle_background.png
+gui/phone/bar/bottom.png
+gui/phone/bar/left.png
+gui/phone/bar/right.png
+gui/phone/bar/top.png
+gui/phone/overlay/game_menu.png
+gui/phone/overlay/main_menu.png
+gui/phone/scrollbar/horizontal_hover_bar.png
+gui/phone/scrollbar/horizontal_hover_thumb.png
+gui/phone/scrollbar/horizontal_idle_bar.png
+gui/phone/scrollbar/horizontal_idle_thumb.png
+gui/phone/scrollbar/vertical_hover_bar.png
+gui/phone/scrollbar/vertical_hover_thumb.png
+gui/phone/scrollbar/vertical_idle_bar.png
+gui/phone/scrollbar/vertical_idle_thumb.png
+gui/bar/bottom.png
+gui/bar/left.png
+gui/bar/right.png
+gui/bar/top.png
+gui/overlay/confirm.png
+gui/overlay/game_menu.png
+gui/overlay/main_menu.png
+gui/scrollbar/horizontal_hover_bar.png
+gui/scrollbar/horizontal_hover_thumb.png
+gui/scrollbar/horizontal_idle_bar.png
+gui/scrollbar/horizontal_idle_thumb.png
+gui/scrollbar/vertical_hover_bar.png
+gui/scrollbar/vertical_hover_thumb.png
+gui/scrollbar/vertical_idle_bar.png
+gui/scrollbar/vertical_idle_thumb.png

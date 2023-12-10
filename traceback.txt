@@ -1,58 +1,71 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 158, in script
-    "She turns off her video in the class so we can talk."
-  File "renpy/common/00placeholder.rpy", line 202, in visit
-    return [ self.get_child() ]
-  File "renpy/common/00placeholder.rpy", line 179, in get_child
-    Text(text, pos=textpos, xanchor=0.5, yanchor=0.5, style="_default", color="#aaa", text_align=0.5),
-KeyError: u'Demi'
+While loading <renpy.display.im.Image object ('images/bg jerome_background.png') at 0x102511eb0>:
+  File "game/script.rpy", line 1492, in script
+    "Anaya ends the Zoom meeting, pulls out her earbuds and laughs maniacally."
+OSError: Couldn't find file 'images/bg jerome_background.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 158, in script
-    "She turns off her video in the class so we can talk."
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ast.py", line 706, in execute
+  File "game/script.rpy", line 1492, in script
+    "Anaya ends the Zoom meeting, pulls out her earbuds and laughs maniacally."
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/exports.py", line 1384, in say
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/exports.py", line 1473, in say
     who(what, *args, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 1179, in __call__
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/character.py", line 1352, in __call__
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 851, in do_display
-    **display_args)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/character.py", line 601, in display_say
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/character.py", line 1003, in do_display
+    display_say(who,
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/character.py", line 693, in display_say
     rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/ui.py", line 298, in interact
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 2978, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 3378, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/display/core.py", line 556, in visit_all
-    for d in self.visit():
-  File "renpy/common/00placeholder.rpy", line 202, in visit
-    return [ self.get_child() ]
-  File "renpy/common/00placeholder.rpy", line 179, in get_child
-    Text(text, pos=textpos, xanchor=0.5, yanchor=0.5, style="_default", color="#aaa", text_align=0.5),
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/text/text.py", line 1525, in __init__
-    self.set_text(text, scope, substitute)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/text/text.py", line 1644, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "/Volumes/renpy-7.4.0-sdk/renpy-7.4.0-sdk/renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'Demi'
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/core.py", line 4172, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/core.py", line 2779, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/im.py", line 330, in get
+    surf = image.load()
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/im.py", line 803, in load
+    raise e
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/display/im.py", line 757, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "/Volumes/renpy-8.1.1-sdk/renpy-8.1.1-sdk/renpy/loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/bg jerome_background.png'.
 
+macOS-13.4-arm64-arm-64bit arm64
+Ren'Py 8.1.1.23060707
+Zoombomber 1.0
+Mon Jun 26 14:03:30 2023

@@ -264,7 +264,7 @@ image small_outline Paloma:
    "smallwindowoutline.png"
    xpos 1530
    xanchor 0
-   ypos 596
+   ypos 418
    yanchor 0
 
 image small_outline Cameron:
@@ -285,7 +285,7 @@ image small_outline Demi:
    "smallwindowoutline.png"
    xpos 1530
    xanchor 0
-   ypos 418
+   ypos 774
    yanchor 0
 
 image small_outline Iman:
@@ -514,6 +514,21 @@ image outline Paloma3:
    xpos 1254
    xanchor 0
    ypos 360
+   yanchor 0
+
+#characters for 3
+image Paloma silent3:
+   "Paloma silent.png"
+   xpos 1260
+   xanchor 0
+   ypos 366
+   yanchor 0
+
+image Anaya silent3:
+   "Anaya silent.png"
+   xpos 660
+   xanchor 0
+   ypos 366
    yanchor 0
 
 #screen shot images

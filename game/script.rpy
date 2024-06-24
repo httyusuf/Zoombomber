@@ -422,7 +422,7 @@ label choice7:
   $renpy.set_style_preference("choice", "default")
   menu:
 
-    "Quickly send 'R background'":
+    "Quickly send 'r background'":
       $fixed_message = True
       jump choice10
 
@@ -468,7 +468,7 @@ label choice9:
 
 label choice10:
   show chatbox cameron R_background at truecenter
-  "I quickly send “R background” and then leap onto my bed."
+  "I quickly send “r background” and then leap onto my bed."
   
   hide chatbox cameron R_background
   you "I sent him ‘I like you’ instead of ‘I like your background’ I’m gonna die."
@@ -569,6 +569,7 @@ label scream_into_pillow:
   show small_outline Cameron
   "Cameron, a vegan, turns green and runs out of his room."
 
+  show bg sharescreen2 
   show small_outline Iman
   "The only one calm is Iman, who is preoccupied by a steaming bowl of popcorn."
   
@@ -1259,7 +1260,13 @@ label option4:
   
   #3 boxes left
   scene bg zoom3windows
-
+  show Paloma silent3
+  show Anaya silent3
+  show text [name]:
+    xpos 358
+    xanchor 0.5
+    ypos 516
+    yanchor 0.5
   "The boxes drop off like dominoes until its only me, Anaya, and Paloma left, even the Professor is gone."
 
   show outline Paloma3
@@ -1515,6 +1522,7 @@ label Good_ending:
 
   "A look of horror slowly dawns on Anaya's face."
 
+  #jerome_background glitch
   "Her computer screen ''GLITCHES''..."
 
   "{b}Good Ending{/b}."

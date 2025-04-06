@@ -1076,7 +1076,7 @@ label Send_chat_message:
 
   d "See nothing- Oops forgot everyone can see me."
 
-  "The figure reappears a 3rd time, now in ''Demi’s background''!"
+  "The figure reappears a 3rd time, now in Demi’s background!"
 
   if screenshot_iman:
     $renpy.set_style_preference("choice", "default")
@@ -1190,11 +1190,9 @@ label Call_her_back:
   show facetime demi
   "I pick up my phone and try to call her back, but there's nothing but a dial tone on the other end."
 
-  ""
-
   hide facetime demi
   ""
-
+  
   $renpy.set_style_preference("choice", "hidden_choice")
   menu:
     t " " 

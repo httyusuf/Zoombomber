@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1466: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "I consider trying to plead my case but clearly these two are never going to believe me."
+File "game/script.rpy", line 544: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xpos 1708
     ^
 
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Jun 25 14:28:19 2023
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Fri Oct 10 12:01:58 2025

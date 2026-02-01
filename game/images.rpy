@@ -44,6 +44,34 @@ image Paloma silent:
   ypos 414
   yanchor 0
 
+image Paloma sweatshirt:
+  "Paloma sweatshirt.png"
+  xpos 60
+  xanchor 0
+  ypos 414
+  yanchor 0
+
+image Paloma hot:
+  "Paloma hot.png"
+  xpos 60
+  xanchor 0
+  ypos 414
+  yanchor 0
+
+image Paloma scared:
+  "Paloma scared.png"
+  xpos 60
+  xanchor 0
+  ypos 414
+  yanchor 0
+
+image Paloma smiling:
+  "Paloma smiling.png"
+  xpos 60
+  xanchor 0
+  ypos 414
+  yanchor 0
+
 image Marcus silent:
   "Marcus silent.png"
   xpos 1260

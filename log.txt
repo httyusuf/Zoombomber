@@ -1,47 +1,526 @@
-Sat Apr  5 19:50:14 2025
-macOS-15.4-arm64-arm-64bit
-Ren'Py 8.1.1.23060707
- 
+2026-01-24 21:08:13 UTC
+macOS-15.6.1-arm64-arm-64bit
+Ren'Py 8.5.2.26010301
 
-Bootstrap to the start of init.init. took 0.02s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.03s
-Loading script. took 0.56s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
+Early init took 27 ms
+Loading error handling took 101 ms
+Loading script took 802 ms
+Loading save slot metadata took 52 ms
+Loading persistent took 0 ms
+Running init code took 183 ms
+Loading analysis data took 13 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 8 ms
 Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
+Dump and make backups took 24 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 20 ms
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.26s
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 9 ms
+Save screen analysis took 7 ms
+Save pyanalysis took 3 ms
+Save bytecode took 17 ms
+Running _start took 0 ms
+Interface start took 408 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1496, 967)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1 Pro'
-Version: b'2.1 Metal - 89.4'
-Display Info: None
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
 Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(2788, 1568)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resize event: <Event(65533-VIDEORESIZE h=784, mod=0, size=(1394, 784), w=1394)>
+Resetting cache.
+Early init took 7 ms
+Loading error handling took 172 ms
+Loading script took 355 ms
+Loading save slot metadata took 13 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 25 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 27 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 2 ms
+Running _start took 59 ms
+Interface start took 232 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 17 ms
+Loading error handling took 73 ms
+Loading script took 210 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 24 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 28 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 120 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 7 ms
+Loading script took 39 ms
+Loading save slot metadata took 9 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 6 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 2 ms
+Dump and make backups took 22 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 27 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 9 ms
+Analyze screens took 1 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 132 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 7 ms
+Loading script took 126 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 2 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 7 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 25 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 29 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 120 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Cleaning stores took 0 ms
+Load screen analysis took 19 ms
+Analyze screens took 0 ms
+Running _start took 1 ms
+Resetting cache.
+Early init took 10 ms
+Loading error handling took 81 ms
+Loading script took 248 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 24 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 35 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 7 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 136 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 6 ms
+Loading script took 39 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 6 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 5 ms
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 29 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 9 ms
+Analyze screens took 1 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 122 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 19 ms
+Loading error handling took 74 ms
+Loading script took 263 ms
+Loading save slot metadata took 11 ms
+Loading persistent took 0 ms
+Running init code took 17 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 11 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 25 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 36 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 4 ms
+Save bytecode took 1 ms
+Running _start took 0 ms
+Interface start took 135 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 14 ms
+Loading error handling took 65 ms
+Loading script took 213 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 15 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 24 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 29 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 119 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 7 ms
+Loading script took 136 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 15 ms
+Loading analysis data took 2 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 30 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 126 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 6 ms
+Loading script took 175 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 15 ms
+Loading analysis data took 2 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 30 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 129 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 6 ms
+Loading script took 93 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 16 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 29 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 124 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3 ms
+Loading error handling took 7 ms
+Loading script took 136 ms
+Loading save slot metadata took 13 ms
+Loading persistent took 0 ms
+Running init code took 17 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 6 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 34 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 7 ms
+Save pyanalysis took 3 ms
+Save bytecode took 1 ms
+Running _start took 0 ms
+Interface start took 127 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 16 ms
+Loading error handling took 79 ms
+Loading script took 247 ms
+Loading save slot metadata took 12 ms
+Loading persistent took 0 ms
+Running init code took 15 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 5 ms
+Backing up script files to '/Users/tobiyusuf/Library/RenPy/backups/Zoombomber':
+Dump and make backups took 23 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 33 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 5 ms
+Save screen analysis took 6 ms
+Save pyanalysis took 3 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 128 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1496, 967)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1496, 'current_h': 967, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1394, 784) drawable=(1394, 784)
 Maximum texture size: 4096x4096

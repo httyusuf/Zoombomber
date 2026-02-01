@@ -57,7 +57,7 @@ show Professor silent
 show Frank silent
 show Cameron silent
 show Iman silent
-show Paloma silent
+show Paloma smiling
 show Marcus silent
 show Demi silent
 
@@ -158,9 +158,10 @@ label scene_2:
   show Frank silent
   show Cameron silent
   show Iman silent
-  show Paloma silent
+  show Paloma smiling
   show Marcus silent
   show facetime demi
+  show mute_button mute
   show text [name]:
     xpos 358
     xanchor 0.5
@@ -178,7 +179,7 @@ label choice2:
 
   you "No, my mic actually sucks. Think that's a good enough excuse to leave my camera off too?"
 
-  d "Yeah you can totally {b}leave your camera and mic off for the rest of class{/b}. That's my plan anyways."
+  d "Yeah you can totally {b}leave your camera and mic off for the rest of class{/b}. That's my plan anyways."#this doesn't make sense because Demi turns off her video
 
   you "Ok good because I can NOT let Cameron see my room. I’ll never live this down."
 
@@ -225,9 +226,11 @@ label look_at_computer_screen:
 
   # show paoloma remove_sweatshirt
   show outline Paloma
+  show Paloma sweatshirt
   "Finally I notice Paloma taking off her sweatshirt revealing a paper thin tank top, and she’s clearly not wearing a bra."
   
-  # show Palomao tanktop  
+  # show Palomao tanktop
+  show Paloma hot  
   you "Ugh why do I even try?"
 
   "Demi takes a little too long to reply."
@@ -277,14 +280,24 @@ label Jerome:
   "Anaya turns to yell at someone off her screen."
 
   a "Shut up Jerome!"
-
+  
+  #show everyone laughing
+  show Anaya talking
+  show Paloma scared
+  #show Cameron talking
+  #show Marcus talking
+  #show Iman talking
+  #show Frank talking
   "We all laugh."
 
   a "Sorry my lil bro is really into esports."
 
   a "And this school doesn't pay me enough to move out of my parent's place. So... deal with it."
   
+  #everyone back to being silent
   show outline Professor
+  show Anaya silent
+  show Paloma silent
   t "Ahem. Everyone open your textbooks to Kapitel 9: {i}Romantische Worte{/i}."
 
   $renpy.set_style_preference("choice", "default")
@@ -337,6 +350,7 @@ label choice5a:
   #show Marcus blurred 
   #show Iman blurred 
   #show Frank blurred
+  stop music
 
   show Nein at truecenter
   "The Inglourious Basterds clip of Hitler shouting NEIN NEIN NEIN plays loudly on repeat. Thankfully my mic is muted."
@@ -346,6 +360,7 @@ label choice5a:
   "I can't help but laugh."
   hide Nein
   hide zoomwindows_blurred
+  play music "02 Like a Refreshing Sunrise.mp3"
   jump choice5c
 
 label choice5b:
@@ -515,7 +530,8 @@ label scream_into_pillow:
   
   hide facetime demi 
   # show share screen layout
-
+  
+  stop music
   hide mute_button
   hide text [name]
   hide outline Professor
@@ -527,6 +543,13 @@ label scream_into_pillow:
   hide Marcus silent
   hide Iman silent
   hide Frank silent
+  #show Professor small
+  #show Anaya small
+  #show Paloma small
+  #show Cameron small
+  #show Marcus small
+  #show Iman small
+  #show Frank small
   show text [name]:
     xpos 1708
     xanchor 0.5
@@ -549,31 +572,39 @@ label scream_into_pillow:
   "A cacophony of sound as everyone unmutes their mics."
 
   show small_outline Frank
+  #show Frank small_talking
   f "What's happening?"
 
+  #show Cameron small_talking
   show small_outline Cameron
   c "Shut it off!"
 
+  #show Demi small_talking
   show small_outline Demi
   d "Marcus stop this isn't funny."
 
+  #show Paloma small_talking
   show small_outline Paloma
   p "Jesus Christ!"
 
+  #show Marcus small_talking
   show small_outline Marcus
   m "I'm not the one doing this!"
 
+  #show Professor small_talking
   show small_outline Professor
   t "What is this Anya?"
 
+  #show Cameron green
   show small_outline Cameron
   "Cameron, a vegan, turns green and runs out of his room."
 
   show bg sharescreen2 
   show small_outline Iman
+  #show Iman small_popcorn
   "The only one calm is Iman, who is preoccupied by a steaming bowl of popcorn."
   
-  # go back to zoon layer out
+  # go back to zoom layout
   scene bg zoomwithoutdemi
   hide small_outline Iman
   show mute_button mute
